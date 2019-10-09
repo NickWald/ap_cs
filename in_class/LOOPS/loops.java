@@ -1,7 +1,7 @@
 //PRINT A STRING VERTICALLY:
-public class loops{
+public class Loops{
   public static void main(String[] args){
-    System.out.println()
+    System.out.printCharsFor("Hello");
   }
 
 public void printCharsFor(String s){
@@ -10,14 +10,15 @@ public void printCharsFor(String s){
   }
 }
 
-
+/*
 //or as a while loop:
 public void printCharsWhile(String s){
-  while int i = 0(i < s.lenth){
+  while (int i = 0(i < s.lenth){
     println(s.charAt(i));
     x++;
   }
 }
+*/
 
 //NOW BACKWARDS
 public void printCharsBackward(String s){
