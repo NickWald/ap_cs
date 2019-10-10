@@ -47,7 +47,7 @@ public class Magpie2
 		else if (statement.indexOf("cat") >= 0
 				|| statement.indexOf("dog") >= 0)
 		{
-			response = "i do not care about your pets.";
+			response = "Tell me more about your pets.";
 		}
 
 		//MS
@@ -57,6 +57,12 @@ public class Magpie2
 				|| statement.indexOf("ms") >= 0)
 		{
 			response = "He sounds like he knows what he's talking about.";
+		}
+		//more keywords
+		else if (statement.indexOf("democrat") >= 0
+				|| statement.indexOf("republican") >= 0)
+		{
+			response = "Tell me about your political views.";
 		}
 
 		//otherwise...
@@ -95,7 +101,12 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
-
+		{
+			response = "Now that's hot.";
+		}
+		{
+			response = "That is fascinating, go on...";
+		}
 		return response;
 	}
 }
