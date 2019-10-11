@@ -10,15 +10,21 @@
  * @author Laurie White
  * @version April 2012
  */
+
+/*
+Nick Wald
+Due 10/11/19 at 11:45pm
+AP CS
+*/
+
 public class Magpie2
 {
 	/**
 	 * Get a default greeting
 	 * @return a greeting
 	 */
-	public String getGreeting()
-	{
-		return "Hello, let's talk.";
+	public String getGreeting(){
+		return "Lets chat, say anything!";
 	}
 
 	/**
@@ -28,46 +34,56 @@ public class Magpie2
 	 *            the user statement
 	 * @return a response based on the rules given
 	 */
-	public String getResponse(String statement)
-	{
+	public String getResponse(String statement){
 		String response = "";
-		if (statement.indexOf("no") >= 0)
-		{
+		int trimmedChars = statement.trim().length();
+
+		//if statements (responses)
+		if (statement.indexOf("no") >= 0 || (statement.indexOf("No")) >= 0)  {
 			response = "Why so negative?";
 		}
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
-		{
+				|| statement.indexOf("brother") >= 0) {
 			response = "tell me more about your family.";
 		}
 
 		//pets
 		else if (statement.indexOf("cat") >= 0
-				|| statement.indexOf("dog") >= 0)
-		{
+				|| statement.indexOf("dog") >= 0) {
 			response = "Tell me more about your pets.";
 		}
 
-		//MS
+		//trim for empty inputs
+		else if (trimmedChars == 0) {
+			response = "Please type something I am so alone and desperately need soemoene to talk to.";
+		}
+
+		//Mr. MS
 		else if (statement.indexOf("Mr.") >= 0
 				|| statement.indexOf("MS") >= 0
 				|| statement.indexOf("mr.") >= 0
-				|| statement.indexOf("ms") >= 0)
-		{
+				|| statement.indexOf("ms") >= 0) {
 			response = "He sounds like he knows what he's talking about.";
 		}
+
 		//more keywords
-		else if (statement.indexOf("democrat") >= 0
-				|| statement.indexOf("republican") >= 0)
-		{
-			response = "Tell me about your political views.";
+		//classes
+		else if (statement.indexOf("school") >= 0
+				|| statement.indexOf("class") >= 0
+				|| statement.indexOf("grade") >= 0) {
+			response = "Tell me about your classes.";
+		}
+		//interests
+		else if (statement.indexOf("java") >= 0
+				|| statement.indexOf("computer science") >= 0
+				|| statement.indexOf("coding") >= 0) {
+			response = "You must be interested in computer science.";
 		}
 
 		//otherwise...
-		else
-		{
+		else {
 			response = getRandomResponse();
 		}
 		return response;
@@ -80,7 +96,7 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6 ;
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -101,10 +117,11 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
+		else if (whichResponse == 4)
 		{
 			response = "Now that's hot.";
 		}
-		{
+		else if (whichResponse == 5){
 			response = "That is fascinating, go on...";
 		}
 		return response;
