@@ -1,6 +1,6 @@
 public class adventure {
 	public static void main(String[] args) {
-    grid(10, 10, 3, 4); //(rows, columns, point's x, point's  y) (FROM UPPER LEFTT CORNER)
+    grid(5, 5, 2, 0); //(rows, columns, point's x, point's  y) (FROM UPPER LEFTT CORNER)
 	}
 
   public static void grid(int r, int c, int x, int y){
