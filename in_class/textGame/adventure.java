@@ -1,9 +1,9 @@
 public class adventure {
 	public static void main(String[] args) {
-    grid(5, 5, 2, 0); //(rows, columns, point's x, point's  y) (FROM UPPER LEFTT CORNER)
+    grid(5, 5, 5, 5); //(rows, columns, point's x, point's  y) (FROM UPPER LEFTT CORNER)
 	}
 
-  public static void grid(int r, int c, int x, int y){
+  public static void grid(int r, int c, int y, int x){
     for(int rows = 0; rows <= r; rows++){
       for(int columns = 0; columns <= c; columns++){
         if(rows == x && columns == y){
