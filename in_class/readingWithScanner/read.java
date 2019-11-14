@@ -26,7 +26,8 @@ public class read {
     int index = 0;
 
     /* WHILE LOOP VERSION (will do the same thing):
-    while (index<sample.length()){
+    while (inde
+    x<sample.length()){
       if (sample.charAt(index) == 'G') counter++;
       index++;
     }
