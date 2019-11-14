@@ -7,21 +7,10 @@ import java.util.Scanner;
 
 public class SampleRandomGenerator {
 	public static void main(String[] args) {
-		int bennet = 10;
-    int alexa = 0.2534;
-    boolean achmed = false;
-    achmed = bennet > alexa;
+	
+		for (int x = 1; x >= 100; x++ ) {
+			System.out.println(x);
+		}
 
-    double randomNum = Math.random()*6+1;
-
-		Scanner input = new Scanner(System.in);
-		double minVal = input.nextDouble();
-
-		System.out.println(minVal);
-		String s = input.nextLine();
-
-		double randomVal = Math.random()+minVal;
-
-    System.out.println("Strings and other words" + alexa + "-" + bennet);
 	}
 }
