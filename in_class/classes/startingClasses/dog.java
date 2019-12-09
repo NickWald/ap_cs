@@ -39,11 +39,13 @@ public class dog {
     mass = m;
 
   }
-  /** Dog boomer = new Dog("boomer", 3.6) //whatever is in the parentheses is
-  * values being used
-  * Dog taco = new Dog()// this uses the first constructor because nothing is set
-  * to args; a new dog with no args uses constructor that takes no args
-  */
+
+  /**
+   * Dog boomer = new Dog("boomer", 3.6) //whatever is in the parentheses is
+   * values being used Dog taco = new Dog()// this uses the first constructor
+   * because nothing is set to args; a new dog with no args uses constructor that
+   * takes no args
+   */
 
   // methods
   public void bark() {
@@ -62,9 +64,11 @@ public class dog {
   }
 
   public void feed() {
-  }
-}
+  }}
 
-for (Integer i = 0; i < iterable.length; i++) {
+  for(
+
+  Integer i = 0;i<iterable.length;i++)
+  {
 
 }

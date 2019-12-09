@@ -1,23 +1,27 @@
 //global variables
-Ball b1;
-Ball b2;
-Ball b3;
+Ball[] ballCollection;
+
+int n = 2;
+
 void setup(){
   size(500,500);
-  b1 = new Ball(30);
-  b2 = new Ball(20);
-  b3 = new Ball(10);
+  
+  ballCollection = new Ball[n];
+  for (int i = 0; i < ballCollection.length;  i++){
+    ballCollection[i] = new Ball(random(10, 80)); //fills every spot with a radius of a number between 10 and 49
+  } //array filled
+
 }
 
 void draw(){
   background(255);
-  b1.show();
-  b1.move();
-  
-  b2.show();
-  b2.move();
-  
-  b3.show();
-  b3.move();
-
+  for (int i = 0; i < ballCollection.length;  i++){
+    ballCollection[i].show();
+    //ballCollection[i].move();
+  }
+  for (Ball b : ballCollection){
+    b.show();
+    b.move();
+    b.grow();
+  }
 }
