@@ -12,9 +12,17 @@ public class arrayList {
       System.out.println(list.get(i));
     }
 
+    for (int i = 0; i < list.size(); i++) {
+      if(list.get(i)%2 == 0){
+        list.remove(i);
+      }
+    }
+
     for (int i : list) {
       System.out.println(i);
     }
+
+    fo 
 
   }
 }

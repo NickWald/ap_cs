@@ -9,3 +9,5 @@ for(int i = 0; i < arr.length; i++){
   arr[i] = i*2;
   print(arr[i]);
 }
+
+for
