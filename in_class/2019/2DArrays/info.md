@@ -15,7 +15,7 @@ Array with arrays inside, written as [][]
 int [][] grid = new int[r][c]
 
 //to print 8 by 5 grid use:
-int [][] grid = new int[8][5]
+int [][] grid = new int[8][5];
 //size 8 array, where each slot in the array has an array of length 5
 ```
 

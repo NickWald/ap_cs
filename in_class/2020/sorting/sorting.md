@@ -20,13 +20,13 @@ How do i put 7 in  3?
 
 ```java
 int s = arr[0];
-arr[0]=arr[3];
+arr[0] = arr[3];
 arr[3] = s;
 ```
 
 Why cant you just do this?:
 ```java
-arr[0]=arr[3];
+arr[0] = arr[3];
 arr[3] = arr[0]
 ```
 *because you lose track of what you are replacing*

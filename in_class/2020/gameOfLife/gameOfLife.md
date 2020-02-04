@@ -1,4 +1,4 @@
-.,# 1-30-20 (PROJECT)
+## 1-30-20 (PROJECT)
 #### *Creating a version of Conway's game of life; should use 2D Arrays*
 
 
@@ -35,3 +35,5 @@ Every stage, you look at all cells:
 + Exactly 3 alive neighbors will revive you
 
 MADE IN PROCESSING
+
+[RULES](https://www.cs.utexas.edu/~nclement/aces/javaII/5-two-dimensional-arrays.html)
