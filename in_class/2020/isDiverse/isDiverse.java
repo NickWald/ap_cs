@@ -1,12 +1,13 @@
 /**
 ** @return true if all rows in arr2D have different row sums;
-** @return false otherwise
+**  false otherwise
 */
 public static boolean isDiverse(int[][] arr2D){
-  public int totalR;
-  if(arr2D.rowSum())
-
+  int[] sums = rowSums(arr2D);
+  for (int i = 0; i < sums.length; i++) {
+    for (int j = i+1; j < sums.length; j++) {
+      if(sums[i] == sums[j]) return false;
     }
   }
-  return
+  reuturn true;
 }

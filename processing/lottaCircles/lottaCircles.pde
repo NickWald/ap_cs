@@ -15,8 +15,8 @@ void draw(){
     for(int y = 25; y<height; y+=100){
     fill((int)((x+y)/(double)(width+height) * 155+100), 0, 100);
     ellipse(50+x, 50+y, 100, 100);
-    
-    
+
+
     fill(0);
     text(circleNum + "", 50+x, 50+y);
     circleNum++;
