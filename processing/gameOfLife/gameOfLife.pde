@@ -2,10 +2,15 @@ tile t;
 private boolean playing = false;
 public void setup(){
   size(500,500);
-  t = new tiles(200,200);
+  t = new tile(200,200);
 }
 
 public void draw(){
   background(255);
-  g.show;
+  t.show();
+  if(playing){
+    if(frameCount%4 == 0){
+      t.generate();
+    }
+  }
 }
