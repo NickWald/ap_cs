@@ -1,7 +1,31 @@
 <link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet"></link>
-# <div style="color: yellow">RECURSION </div> <div style="font-size: 15px; color: gray">2/11/19<br>Need to be able to read, not write recursion</div>
+
+# <div style="color: #3CB371">RECURSION </div>
+**<div style="font-size: 15px; color: gray">2/11/19<br>Need to be able to read, not write recursion</div>**
+###<div style="color: #3CB371">USING A FUNCTION INSIDE ITSELF</div>
+* RIGHT SIDE OF MATRIX IS BASE CASE, SAYS WHAT TO DO AT BOTTOM/BASE OF CONDITION
+  * DEFINES THE STARTING CASE
+
+* LEFT SIDE IS RECURSIVE CASE,
+  * USES FUNCTION INSIDE ITSELF
+  * LOOKING AT SELF-SIMILARITY / BREAKING DOWN A PROBLEM
+
+##### REDUCING SIZE OF PROBLEM UNTIL WE REACH BASE CASE
+
+WORKS WITH METHODS ONLY
+
+PRIME EXAMPLE:
+[TO ADD DIGITS](/in_class/2020/recursion/addDigits.md)
+---
+
+##FACTORIAL:
+5! = 5 * 4 * 3 * 2 * 1
+
+![equation](http://www.sciweavers.org/upload/Tex2Img_1581520600/render.png)
 
 
+<br>
+---
 <br>
 
 **Fibonacci Sequence: *0, 1, 1, 2, 3, 5, 8, 13, 21***

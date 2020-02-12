@@ -11,8 +11,8 @@ public class sorting {
   /**
    * @author nick wald
    *
-   * @param arr must contain at least 2 numbers sorts a given array lowest to
-   *            highesr
+   * @param arr must contain at least 2 numbers sorts * a given array lowest to
+   *            highest
    * @return sorted array with numbers in ascending order
    */
   public static void bubbleSort(int[] arr) {
