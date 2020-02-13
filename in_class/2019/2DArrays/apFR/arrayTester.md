@@ -15,7 +15,7 @@ public static int[] getColumn(int[][] arr2D, int c){
 }
 ```
 
-**Part B: isLatin method**
+**Part B:  isLatin method**
 
 ```java
 public static boolean isLatin(int[][] square){
