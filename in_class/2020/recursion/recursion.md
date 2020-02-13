@@ -1,43 +1,56 @@
-<link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet"></link>
+---
+|-
+  5! = 5 * 4 * 3 * 2 * 1
+  ![equation](http://www.sciweavers.org/upload/Tex2Img_1581520600/render.png)
+
+  <br>
+---
+
+<link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet">
 
 # <div style="color: #3CB371">RECURSION </div>
-**<div style="font-size: 15px; color: gray">2/11/19<br>Need to be able to read, not write recursion</div>**
-###<div style="color: #3CB371">USING A FUNCTION INSIDE ITSELF</div>
-* RIGHT SIDE OF MATRIX IS BASE CASE, SAYS WHAT TO DO AT BOTTOM/BASE OF CONDITION
-  * DEFINES THE STARTING CASE
 
-* LEFT SIDE IS RECURSIVE CASE,
-  * USES FUNCTION INSIDE ITSELF
-  * LOOKING AT SELF-SIMILARITY / BREAKING DOWN A PROBLEM
+--------------------------------------------------------------------------------
 
-##### REDUCING SIZE OF PROBLEM UNTIL WE REACH BASE CASE
+<div style="font-size: 15px; color: gray">
+  <strong>2/11/19<br>Need to be able to read, not write recursion</strong>
+</div>
+
+## <div style="color: #3CB371">USING A FUNCTION INSIDE ITSELF</div>
+
+- RIGHT SIDE OF MATRIX IS BASE CASE, SAYS WHAT TO DO AT BOTTOM/BASE OF CONDITION
+
+  - DEFINES THE STARTING CASE
+
+- LEFT SIDE IS RECURSIVE CASE,
+
+  - USES FUNCTION INSIDE ITSELF
+  - LOOKING AT SELF-SIMILARITY / BREAKING DOWN A PROBLEM
+
+### REDUCING SIZE OF PROBLEM UNTIL WE REACH BASE CASE
 
 WORKS WITH METHODS ONLY
 
-PRIME EXAMPLE:
-[TO ADD DIGITS](/in_class/2020/recursion/addDigits.md)
----
+PRIME EXAMPLE: [TO ADD DIGITS](/in_class/2020/recursion/addDigits.md)<br>
 
-##FACTORIAL:
-5! = 5 * 4 * 3 * 2 * 1
+--------------------------------------------------------------------------------
 
-![equation](http://www.sciweavers.org/upload/Tex2Img_1581520600/render.png)
+```
+f(16) = f(8) + 1
+f
+```
 
+--------------------------------------------------------------------------------
 
-<br>
----
-<br>
+**Fibonacci Sequence: _0, 1, 1, 2, 3, 5, 8, 13, 21_**
 
-**Fibonacci Sequence: *0, 1, 1, 2, 3, 5, 8, 13, 21***
-
-Write this with a loop
-or write it self refferentially (recursively)
+Write this with a loop or write it self refferentially (recursively)
 
 to get the next Fibonacci number:
 
-![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_n%20%3D%20f_n_-_1%20&plus;%20f_n_-_2)
+![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_n%20%3D%20f_n_-_1%20+%20f_n_-_2)
 
-![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_2%20%3D%20f_%28_1_%29%20&plus;%20f_%28_0_%29)
+![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_2%20%3D%20f_%28_1_%29%20+%20f_%28_0_%29)
 
 Here is the loop for this:
 
@@ -62,7 +75,6 @@ public int fib(int n){
 }
 ```
 
-
 **FULL CLASS:**
 
 ```java
@@ -82,13 +94,16 @@ public class Fibonacci {
 ```
 
 ## ZERO-ONE KNAPSACK PROBLEM
-* BACKPACK OF SIZE S, S = 9
-* There is a list of items of various sizes {3, 7 ,8 , 15}
-* **is it possible to take any random combination of these numbers to add to S?**
 
-* Solution is a recursive relation/function
-  *  Trying to brute force this is a bad choice because of runtime
-```java
-knapsack(x, 1) //first number is size of backpack, second number is item in list*
-if(x == s1) return true;
-```
+- BACKPACK OF SIZE S, S = 9
+- There is a list of items of various sizes {3, 7 ,8 , 15}
+- **is it possible to take any random combination of these numbers to add to S?**
+
+- Solution is a recursive relation/function
+
+  - Trying to brute force this is a bad choice because of runtime
+
+    ```java
+    knapsack(x, 1) //first number is size of backpack, second number is item in list*
+    if(x == s1) return true;
+    ```
