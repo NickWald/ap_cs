@@ -1,6 +1,5 @@
-<center>
 
-## ArrayList (1/21/20) </center>
+# ArrayList (1/21/20) </center>
 
 + Like an array that is dynamically sized, which has methods with it
 + A list in array form

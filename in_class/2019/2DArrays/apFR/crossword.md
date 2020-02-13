@@ -1,6 +1,4 @@
-# Crossword FR
-
-<div style="font-size: 20px; color: gray;">2016 Free Response</div>
+# Crossword FR<div style="font-size: 20px; color: gray;">2016 Free Response</div>
 
 **Part A: toBeLabeled method**
 

@@ -8,13 +8,12 @@
 
 <link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet">
 
-# <div style="color: #3CB371">RECURSION </div>
+# <div style="color: #3CB371">RECURSION </div><div style="font-size: 15px; color: gray;"> <strong>2/11/19<br>Need to be able to read, not write recursion</strong>
+</div>
 
 --------------------------------------------------------------------------------
 
-<div style="font-size: 15px; color: gray">
-  <strong>2/11/19<br>Need to be able to read, not write recursion</strong>
-</div>
+
 
 ## <div style="color: #3CB371">USING A FUNCTION INSIDE ITSELF</div>
 

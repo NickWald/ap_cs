@@ -1,6 +1,4 @@
-# ArrayTester FR
-
-<div style="font-size: 20px; color: gray;">2018 Free Response</div>
+# ArrayTester FR<div style="font-size: 20px; color: gray;">2018 Free Response</div>
 
 **Part A: getColumn method**
 
