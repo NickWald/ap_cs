@@ -1,6 +1,7 @@
 # addDigits both ways
 **Recursive:**
 First, write base case
+
 ```java
 /*
 * @param if i have no digits, return 0
@@ -12,6 +13,7 @@ public int addDigits(int num){
 }
 ```
 **So, to trace number 7315:**
+
 ```
 addDigits(7315)
 = 5 + addDigits(731)
@@ -24,6 +26,7 @@ addDigits(7315)
 
 
 **Non-Recursive:**
+
 ```java
 int sum = 0;
 int num = 3678;
