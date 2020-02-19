@@ -47,4 +47,4 @@ list1.remove(1);
 removes slot 1, slot in front decreases by 1, as does one after
 
 ---
-# 1/27/20
+1/27/20
