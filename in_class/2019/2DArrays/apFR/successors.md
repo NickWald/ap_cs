@@ -1,6 +1,4 @@
-# Successors FR
-
-<div style="font-size: 20px; color: gray;">2017 Free Response</div>
+# Successors FR<div style="font-size: 20px; color: gray;">2017 Free Response</div>
 
 **Part A: findPosition method**
 

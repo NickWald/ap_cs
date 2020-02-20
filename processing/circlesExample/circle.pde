@@ -13,11 +13,11 @@ public class circle{
     green = (int) random(0, 255);
     blue = (int) random(0, 255);
   }
-  
+
   public double getArea(){
     return radius*radius*Math.PI;
   }
-  
+
   public void show(){
     fill(red, green, blue);
     ellipse(x, y, radius*2, radius*2);
@@ -27,7 +27,7 @@ public class circle{
   public int getX(){
     return x;
   }
-  
+
   public int getY(){
     return x;
   }
@@ -36,11 +36,11 @@ public class circle{
   public void moveY(int value){
     y+=value;
   }
-  
+
   public void moveX(int value){
     x+=value;
   }
-  
+
   public void move(){
     x++;
     y++;

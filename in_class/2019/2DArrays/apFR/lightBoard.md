@@ -1,6 +1,4 @@
-# LightBoard FR
-
-<div style="font-size: 20px; color: gray;">2019 Free Response</div>
+# LightBoard FR<div style="font-size: 20px; color: gray;">2019 Free Response</div>
 
 **Part A: LightBoard constructor**
 

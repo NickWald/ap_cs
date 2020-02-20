@@ -13,7 +13,6 @@ s.charAt(0);
   * objectName.method
   * **dependent on state (data referring to current value)**
     * state of snake in snake game = position, health, length, etc.
-
 * Class data belongs to the class:
 
  ```java
