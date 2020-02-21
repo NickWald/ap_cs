@@ -1,7 +1,7 @@
 class snake{
   float x, y, w, h;
   float vx, vy;
-  
+
   snake(int grid){
     w = width/grid;
     h = height/grid;
@@ -10,12 +10,12 @@ class snake{
     vx = 0;
     vy = 0;
   }
-  
+
   void show(){
     fill(255, 0, 255);
     rect(x, y, w, h);
   }
-  
+
   void move(){
     x += vx;
     y =+ vy;
