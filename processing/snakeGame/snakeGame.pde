@@ -27,19 +27,19 @@ void draw(){
   }
 }
 
-//movement 
+//movement
 void keyPressed(){
   if(keyCode == UP){
-    
+
   }
   if(keyCode == DOWN){
-    
+
   }
   if(keyCode == LEFT){
-    
+
   }
   if(keyCode == RIGHT){
-    
+
   }
 }
 
