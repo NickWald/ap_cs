@@ -38,6 +38,15 @@ PRIME EXAMPLE: [TO ADD DIGITS](/in_class/2020/recursion/addDigits.md)<br>
 f(16) = f(8) + 1
 f
 ```
+**REVERSING A STRING**
+![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbg_white%20%5Ctextbf%7BREVERSE%20A%20STRING%7D%20%5Clinebreak%20%5Clinebreak%20f_%28%20_%5Ctextrm%7BString%20s%7D_%29%20%3D%20%5Cbegin%7BBmatrix%7D%20s%26%20%5Ctextrm%7Bif%20s.length%28%29%7D%20%3C%3D%201%20%5Ctextrm%7B%20%28base%20case%29%7D%5C%5C%20f_%28%20_%5Ctextrm%7Bs.substring%281%29%7D%20_%29&plus;%20%5Ctextrm%7B%5Ctextit%7Bs.charAt%7D%7D%280%29%20%26%20otherwise%20%5Ctextrm%7B%20%28recursive%20case%29%7D%5C%5C%5C%20%5Cend%7BBmatrix%7D)
+
+```java
+public String f(String s){
+  if(s.length()<= 1) return s;
+  return f(s.substring(1)) + s.charAt(0);
+}
+```
 
 --------------------------------------------------------------------------------
 
