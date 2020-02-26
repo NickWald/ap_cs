@@ -8,7 +8,11 @@
 
 <link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet">
 
-# <div style="color: #3CB371">RECURSION </div><div style="font-size: 15px; color: gray;"> <strong>2/11/19<br>Need to be able to read, not write recursion</strong>
+# <div style="color: #3CB371;  margin: 0;">RECURSION </div> <div style="font-size: 15px; color: gray;"> <strong> <sup>2/11/19</sup> <br> <sup>Need to be able to read, not write recursion<sup>
+</strong>
+</div>
+
+##<div style="font-size: 20px; color: white;"> THE SAME FUNCTION, BUT SMALLER</div>
 </div>
 
 --------------------------------------------------------------------------------
