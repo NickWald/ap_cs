@@ -43,7 +43,14 @@ f(16) = f(8) + 1
 f
 ```
 **REVERSING A STRING**
-![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbg_white%20%5Ctextbf%7BREVERSE%20A%20STRING%7D%20%5Clinebreak%20%5Clinebreak%20f_%28%20_%5Ctextrm%7BString%20s%7D_%29%20%3D%20%5Cbegin%7BBmatrix%7D%20s%26%20%5Ctextrm%7Bif%20s.length%28%29%7D%20%3C%3D%201%20%5Ctextrm%7B%20%28base%20case%29%7D%5C%5C%20f_%28%20_%5Ctextrm%7Bs.substring%281%29%7D%20_%29&plus;%20%5Ctextrm%7B%5Ctextit%7Bs.charAt%7D%7D%280%29%20%26%20otherwise%20%5Ctextrm%7B%20%28recursive%20case%29%7D%5C%5C%5C%20%5Cend%7BBmatrix%7D)
+
+$$
+f(\text{String s}) =
+  \begin{cases}
+   \ s & \text{if s.length  } \leq 1 \text{ (base case)}\\
+   f(\text{s.substring(1)}) + \text{ s.charAt(0)}       & \text{otherwise (recursive case)} \\
+  \end{cases}
+$$
 
 ```java
 public String f(String s){
@@ -60,9 +67,15 @@ Write this with a loop or write it self refferentially (recursively)
 
 to get the next Fibonacci number:
 
-![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_n%20%3D%20f_n_-_1%20+%20f_n_-_2)
+$$
+f_n = \displaystyle{{f}_{{{n}-{1}}}} = \displaystyle{{f}_{{{n}-{2}}}}
+$$
 
-![equation](https://latex.codecogs.com/png.latex?%5Cbg_white%20%5CLARGE%20f_2%20%3D%20f_%28_1_%29%20+%20f_%28_0_%29)
+
+$$
+\displaystyle{{f}_{{2}}=}{{f}_{{{\left({1}\right)}}}+}{{f}_{{{\left({0}\right)}}}}
+$$
+
 
 Here is the loop for this:
 
