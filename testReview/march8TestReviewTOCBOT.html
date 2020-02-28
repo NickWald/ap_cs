@@ -1,19 +1,23 @@
-<!DOCTYPE html><html><head>
+
+<!DOCTYPE html>
+  <html>
+    <head>
       <title>march8TestReview</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:///C:\Users\Nick Wald\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
-      
-      
 
-      
-      
-      
-      
-      
-      
-      
+      <link rel="stylesheet" href="file:///C:\Users\Nick Wald\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css">
+
+
+
+
+
+
+
+
+
 
       <style>
       /**
@@ -233,7 +237,7 @@ pre[data-line] .line-highlight {
   white-space: pre;
 }
 
-pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight:before,
 pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-start);
   position: absolute;
@@ -251,6 +255,8 @@ pre[data-line] .line-highlight[data-end]:after {
   box-shadow: 0 1px white;
 }
 
+.toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}
+
 pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-end);
   top: auto;
@@ -261,12 +267,17 @@ pre[data-line] .line-highlight[data-end]:after {
 
       </style>
     </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
+    <body for="html-export" >
+      <div class="js-toc-content">
+        <div class="js-toc" style="position: sticky; top: 0; z-index: 20; float: left;"></div>
+
+      <div class="mume markdown-preview"  >
+
       <h1 class="mume-header" id="33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></h1>
 
 <div style="color: gray; font-size:20px;">Nick Wald</div>
 <br>
+<!--
 <ul>
 <li><a href="#33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></a>
 <ul>
@@ -298,6 +309,7 @@ pre[data-line] .line-highlight[data-end]:after {
 </ul>
 </li>
 </ul>
+-->
 <hr>
 <h2 class="mume-header" id="span-stylecolor-34b334-font-weight-boldclass-structurespan"><span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span></h2>
 
@@ -391,16 +403,133 @@ Cases in which the function is called inside itself are recursive cases</p>
 <h3 class="mume-header" id="span-stylecolor-8400ff-font-weight-boldinheritence-polymorphism"><span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></h3>
 
 
+    </div>
       </div>
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script type="text/javascript">
+tocbot.init({
+
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3, h4, h5, h6',
+
+  // Headings that match the ignoreSelector will be skipped.
+  ignoreSelector: '.js-toc-ignore',
+
+  // For headings inside relative or absolute positioned containers within content
+  hasInnerContainers: true,
+
+  // Main class to add to links.
+  linkClass: 'toc-link',
+
+  // Extra classes to add to links.
+  extraLinkClasses: '',
+
+  // Class to add to active links,
+  // the link corresponding to the top most heading on the page.
+  activeLinkClass: 'is-active-link',
+
+  // Main class to add to lists.
+  listClass: 'toc-list',
+
+  // Extra classes to add to lists.
+  extraListClasses: '',
+
+  // Class that gets added when a list should be collapsed.
+  isCollapsedClass: 'is-collapsed',
+
+  // Class that gets added when a list should be able
+  // to be collapsed but isn't necessarily collpased.
+  collapsibleClass: 'is-collapsible',
+
+  // Class to add to list items.
+  listItemClass: 'toc-list-item',
+
+  // How many heading levels should not be collpased.
+  // For example, number 6 will show everything since
+  // there are only 6 heading levels and number 0 will collpase them all.
+  // The sections that are hidden will open
+  // and close as you scroll to headings within them.
+  collapseDepth: 2,
+
+  // Smooth scrolling enabled.
+  scrollSmooth: true,
+
+  // Smooth scroll duration.
+  scrollSmoothDuration: 420,
+
+  // Callback for scroll end.
+  scrollEndCallback: function (e) { },
+
+  // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+  headingsOffset: 1,
+
+  // Timeout between events firing to make sure it's
+  // not too rapid (for performance reasons).
+  throttleTimeout: 50,
+
+  // Element to add the positionFixedClass to.
+  positionFixedSelector: null,
+
+  // Fixed position class to add to make sidebar fixed after scrolling
+  // down past the fixedSidebarOffset.
+  positionFixedClass: 'is-position-fixed',
+
+  // fixedSidebarOffset can be any number but by default is set
+  // to auto which sets the fixedSidebarOffset to the sidebar
+  // element's offsetTop from the top of the document on init.
+  fixedSidebarOffset: 1,
+
+  // includeHtml can be set to true to include the HTML markup from the
+  // heading node instead of just including the textContent.
+  includeHtml: true,
+
+  // orderedList can be set to false to generate unordered lists (ul)
+  // instead of ordered lists (ol)
+  orderedList: false,
+
+  // If there is a fixed article scroll container, set to calculate titles' offset
+  scrollContainer: 10,
+
+  // prevent ToC DOM rendering if it's already rendered by an external system
+  skipRendering: false,
+
+  // Optional callback to change heading labels.
+  // For example it can be used to cut down and put ellipses on multiline headings you deem too long.
+  // Called each time a heading is parsed. Expects a string in return, the modified label to display.
+  // function (string) => string
+  headingLabelCallback: true,
+
+  // ignore headings that are hidden in DOM
+  ignoreHiddenElements: false,
+
+  // Optional callback to modify properties of parsed headings.
+  // The heading element is passed in node parameter and information parsed by default parser is provided in obj parameter.
+  // Function has to return the same or modified obj.
+  // The heading will be excluded from TOC if nothing is returned.
+  // function (object, HTMLElement) => object | void
+  headingObjectCallback: 5,
+
+  // onclick function to apply to all links in toc. will be called with
+  // the event as the first parameter, and this can be used to stop,
+  // propagation, prevent default or perform action
+  onClick: true,
+
+});
+
+</script>
+    </body>
+
+
+
+
+
+
+
+  </html>

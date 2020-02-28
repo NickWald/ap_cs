@@ -108,15 +108,15 @@ arrList.remove(1);
 
 ---
 
-##<span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
+## <span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
 
 ---
 
-##<span style="color: #00308f; font-weight: bold;">STATIC
+## <span style="color: #00308f; font-weight: bold;">STATIC
 
 ---
 
-##<span style="color: #cc0600; font-weight: bold;">RECURSION
+## <span style="color: #cc0600; font-weight: bold;">RECURSION
 **Using a function inside itself, repeatedly shortening and checking through input**
 ESSENTIALLY REDUCING PROBLEM SIZE UNTIL BASE CASE IS REACHED
 
@@ -163,4 +163,21 @@ addDigits(7315)
 ```
 ---
 
-###<span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM
+### <span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+
+<script>
+tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});
+</script>
