@@ -1,13 +1,17 @@
 # **3/3 TEST TOPIC SHEET**
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 
 <div style="color: gray; font-size:20px;">Nick Wald</div>
-<br>
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [**3/3 TEST TOPIC SHEET**](#33-test-topic-sheet)
 	- [<span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span>](#span-stylecolor-34b334-font-weight-boldclass-structurespan)
 		- [<span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span>](#span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan)
 	- [<span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span>](#span-stylecolor-8400ff-font-weight-bold2d-arraysspan)
+		- [<span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:](#span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays)
+			- [<span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span)
+			- [<span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span)
+			- [<span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span)
 	- [<span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span>](#span-stylecolor-ff257f-font-weight-boldarraylistspan)
 		- [<div style="color: #f5c71a; font-weight: bold;">Key Methods:</div>](#div-stylecolor-f5c71a-font-weight-boldkey-methodsdiv)
 			- [<div style="color: #005ae9; font-weight: bold;">ADD</div>](#div-stylecolor-005ae9-font-weight-boldadddiv)
@@ -17,21 +21,79 @@
 	- [<span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING](#span-stylecolor-ff5800-font-weight-boldsorting-searching)
 	- [<span style="color: #00308f; font-weight: bold;">STATIC](#span-stylecolor-00308f-font-weight-boldstatic)
 	- [<span style="color: #cc0600; font-weight: bold;">RECURSION](#span-stylecolor-cc0600-font-weight-boldrecursion)
-		- [<span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM](#span-stylecolor-8400ff-font-weight-boldinheritence-polymorphism)
+		- [<span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM](#span-stylecolor-a30500-font-weight-boldinheritence-polymorphism)
 
 <!-- /TOC -->
 
 ---
 
 ## <span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span>
+dsf
 
 ---
 
 ### <span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span>
+df
 
 ---
 
 ## <span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span>
+Array with arrays inside, written as ```[][]```
+
+```java
+[rows][columns]
+[4][6] = 4 rows, 6 columns
+
+//standard format:
+dataType [][] name = new dataType[r][c]
+
+//printing an 8x5 grid:
+int [][] grid = new int[8][5];
+//array of size 8 with each slot containing an array of size 5
+```
+
+### <span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:
+
+#### <span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span>
+```java
+public int sumArr(int[][] nums){
+	int total = 0;
+	for (int r = 0; r < nums.length; r++) {
+  		for (int c = 0; c < nums[r].length; c++) {
+    		total += nums[r][c];
+  		}
+	}
+	return total;
+}
+```
+
+#### <span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>
+```java
+public int sumEvens(int[][] nums){
+  int sum = 0;
+  for (int r = 0; r < nums.length; r++) {
+    for (int c = 0; c < nums[r].length; c++) {
+      if(nums[r][c] % 2 == 0){
+        sum += nums[r][c];
+      }
+    }
+  }
+  return sum;
+}
+```
+
+#### <span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span>
+
+```java
+int[][] arr = new int[4][3];
+
+for (int r = 0; r < arr.length; r++) { //rows
+  for (int c = 0; c < arr[r].length; c++) { //columns
+    System.out.print(arr[r][c] + "");
+  }
+  system.out.println();
+}
+```
 
 ---
 
@@ -108,15 +170,15 @@ arrList.remove(1);
 
 ---
 
-##<span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
+## <span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
 
 ---
 
-##<span style="color: #00308f; font-weight: bold;">STATIC
+## <span style="color: #00308f; font-weight: bold;">STATIC
 
 ---
 
-##<span style="color: #cc0600; font-weight: bold;">RECURSION
+## <span style="color: #cc0600; font-weight: bold;">RECURSION
 **Using a function inside itself, repeatedly shortening and checking through input**
 ESSENTIALLY REDUCING PROBLEM SIZE UNTIL BASE CASE IS REACHED
 
@@ -135,7 +197,7 @@ public String f(String s){
 }
 ```
 
-**Example 2:**
+***Example 2:***
 ```java
 /*
 * @param if i have no digits, return 0
@@ -163,4 +225,108 @@ addDigits(7315)
 ```
 ---
 
-###<span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM
+### <span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM
+
+
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 11
+
+  node [
+          fontname = "SF Mono"
+          fontsize = 11
+          shape = "record"
+          width = "2"
+  ]
+
+  edge [
+          fontname = "SF Mono"
+          fontsize = 11
+  ]
+
+  parent [
+          label = "{Parent Class|
+            DEFAULT VALUES
+            |
+            DEFAULT METHODS()\l}"
+  ]
+  child [
+          label = "{Child|
+            CARRIES ALL DEFAULT PARENT VALUES \l
+            ALSO CARRIES SUBCLASS-UNIQUE VALUES \l
+            |
+            + CARRIES ALL DEFAULT PARENT METHODS \l}"
+  ]
+
+  parent -> child
+}
+```
+
+Making static variables allows use of parent properties in child class along with more specific ones
+
+EXTENDS, makes child a **subclass**, keeping animal classes while adding its own
+
+```java
+public class Snake extends Animal;
+```
+
+
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 11
+
+  node [
+          fontname = "SF Mono"
+          fontsize = 11
+          shape = "record"
+          width = 2.5
+  ]
+
+  edge [
+          fontname = "SF Mono"
+          fontsize = 11
+  ]
+
+  Animal [
+          label = "{ Animal|
+            - name : string\l
+            - age : int\l
+            - length : int\l
+            - weight : int\l
+            - eyeCount: int\l
+            - hasLegs : boolean\l
+            - Animal[] predators\l
+            - Animal[] prey\l
+            - isPredator : boolean\l
+            - type : string\l
+            |
+            + die() : void\l
+            + eat() : void\l}"
+  ]
+  Snake [
+          label = "{Snake|
+            ALL ANIMAL PROPERTIES +\l
+            - hasPoison : boolean\l
+            - speed : int\l
+            - thickness : int\l
+            - pattern\l
+            |
+            + die() : void\l}"
+  ]
+
+  Animal -> Snake
+}
+```
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js">tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});</script>

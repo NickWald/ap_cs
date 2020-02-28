@@ -31,3 +31,54 @@ So snake has access to animal properties and its own
 * `speed`
 * `thickness`
 * `pattern`
+
+
+HIERARCHY:
+
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 11
+
+  node [
+          fontname = "SF Mono"
+          fontsize = 11
+          shape = "record"
+          width = 2.5
+  ]
+
+  edge [
+          fontname = "SF Mono"
+          fontsize = 11
+  ]
+
+  Animal [
+          label = "{ Animal|
+            - name : string\l
+            - age : int\l
+            - length : int\l
+            - weight : int\l
+            - eyeCount: int\l
+            - hasLegs : boolean\l
+            - Animal[] predators\l
+            - Animal[] prey\l
+            - isPredator : boolean\l
+            - type : string\l
+            |
+            + die() : void\l
+            + eat() : void\l}"
+  ]
+  Snake [
+          label = "{Snake|
+            ALL ANIMAL PROPERTIES +\l
+            - hasPoison : boolean\l
+            - speed : int\l
+            - thickness : int\l
+            - pattern\l
+            |
+            + die() : void\l}"
+  ]
+
+  Animal -> Snake
+}
+```

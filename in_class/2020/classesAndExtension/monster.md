@@ -1,4 +1,3 @@
-
 ```viz
 digraph a {
   Monster -> Zombie;

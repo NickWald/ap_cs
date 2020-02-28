@@ -1,24 +1,52 @@
-<center>
-
 ## <b>1/8/20 - Vector Class</b>
 
-</center>
 
 
 + A Vector has a size and direction, also x and y components
 + A vector can be represented as (x, y), a list of instructions on how to move
 + Vector is the path to the point
 
-<center>
+
 When you want to add vectors, just add the pieces
 
-## <b>UML: </b>
-| Vector |
-|------------------------------------------------|
-| - x<br>- y |
-| + add<br>+ subtract<br>+ toString<br>+ dotProd |
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 10
 
-</center>
+  node [
+          fontname = "SF Mono"
+          fontsize = 12
+          shape = "record"
+          width = "2.5"
+  ]
+
+  edge [
+                fontname = "SF Mono"
+                fontsize = 10
+  ]
+
+  Vector [
+          label = "{ Vector |
+            - name : string\l
+            - x : int\l
+            - y : int \l
+            - weight : int\l
+            - eyeCount: int\l
+            - hasLegs : boolean\l
+            - Animal[] predators\l
+            - Animal[] prey\l
+            - isPredator : boolean\l
+            - type : string\l
+            |
+            + add() : void\l
+            + subtract() : void\l
+            + toString() : void\l
+            + dotProd() : void\l}"
+  ]
+}
+```
+
 
 
 ## Classes:
@@ -30,12 +58,33 @@ int x, String s, Complex c
 ## Objects
 + The specific manifestation of that idea
 
-<center>
 
-## <b>Point: </b>
-| Point |
-|------------------------------------------------|
-| - x<br>- y |
-| + setters<br>+ getters<br>+ toString<br> |
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 10
 
-</center>
+  node [
+          fontname = "SF Mono"
+          fontsize = 12
+          shape = "record"
+          width = "2.15"
+  ]
+
+  edge [
+                fontname = "SF Mono"
+                fontsize = 10
+  ]
+
+  Point [
+          label = "{ Point |
+            - name : string\l
+            - x : int\l
+            - y : int \l
+            |
+            + set() : void\l
+            + get() : void\l
+            + toString() : void\l}"
+  ]
+}
+```

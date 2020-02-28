@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///C:\Users\Nick Wald\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:////Users/nick/.atom/packages/markdown-preview-enhanced/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
       
       
 
@@ -265,8 +265,8 @@ pre[data-line] .line-highlight[data-end]:after {
       <div class="mume markdown-preview  ">
       <h1 class="mume-header" id="33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></h1>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div style="color: gray; font-size:20px;">Nick Wald</div>
-<br>
 <ul>
 <li><a href="#33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></a>
 <ul>
@@ -275,7 +275,17 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan"><span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span></a></li>
 </ul>
 </li>
-<li><a href="#span-stylecolor-8400ff-font-weight-bold2d-arraysspan"><span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span></a></li>
+<li><a href="#span-stylecolor-8400ff-font-weight-bold2d-arraysspan"><span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span></a>
+<ul>
+<li><a href="#span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays"><span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:</span></a>
+<ul>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span></a></li>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span></a></li>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#span-stylecolor-ff257f-font-weight-boldarraylistspan"><span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span></a>
 <ul>
 <li><a href="#div-stylecolor-f5c71a-font-weight-boldkey-methodsdiv"><div style="color: #f5c71a; font-weight: bold;">Key Methods:</div></a>
@@ -292,7 +302,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#span-stylecolor-00308f-font-weight-boldstatic"><span style="color: #00308f; font-weight: bold;">STATIC</span></a></li>
 <li><a href="#span-stylecolor-cc0600-font-weight-boldrecursion"><span style="color: #cc0600; font-weight: bold;">RECURSION</span></a>
 <ul>
-<li><a href="#span-stylecolor-8400ff-font-weight-boldinheritence-polymorphism"><span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></a></li>
+<li><a href="#span-stylecolor-a30500-font-weight-boldinheritence-polymorphism"><span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></a></li>
 </ul>
 </li>
 </ul>
@@ -301,13 +311,61 @@ pre[data-line] .line-highlight[data-end]:after {
 <hr>
 <h2 class="mume-header" id="span-stylecolor-34b334-font-weight-boldclass-structurespan"><span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span></h2>
 
+<p>dsf</p>
 <hr>
 <h3 class="mume-header" id="span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan"><span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span></h3>
 
+<p>df</p>
 <hr>
 <h2 class="mume-header" id="span-stylecolor-8400ff-font-weight-bold2d-arraysspan"><span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span></h2>
 
-<hr>
+<p>Array with arrays inside, written as <code>[][]</code></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token punctuation">[</span>rows<span class="token punctuation">]</span><span class="token punctuation">[</span>columns<span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span> rows<span class="token punctuation">,</span> <span class="token number">6</span> columns
+
+<span class="token comment">//standard format:</span>
+dataType <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> name <span class="token operator">=</span> <span class="token keyword">new</span> dataType<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span>
+
+<span class="token comment">//printing an 8x5 grid:</span>
+<span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> grid <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//array of size 8 with each slot containing an array of size 5</span>
+</pre><h3 class="mume-header" id="span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays"><span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:</span></h3>
+
+<h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sumArr</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> total <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    		total <span class="token operator">+=</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> total<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sumEvens</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        sum <span class="token operator">+=</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//rows</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//columns</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><hr>
 <h2 class="mume-header" id="span-stylecolor-ff257f-font-weight-boldarraylistspan"><span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span></h2>
 
 <p><span style="font-size: 15px; color: ">A dynamically sized array which has methods attached to it by default</span></p>
@@ -368,7 +426,7 @@ ESSENTIALLY REDUCING PROBLEM SIZE UNTIL BASE CASE IS REACHED</p>
   <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> s<span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token function">f</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</pre><p><strong>Example 2:</strong></p>
+</pre><p><em><strong>Example 2:</strong></em></p>
 <pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">/*
 * @param if i have no digits, return 0
 */</span>
@@ -388,8 +446,110 @@ Cases in which the function is called inside itself are recursive cases</p>
 = (5 + (1 + (3 + (7 + 0))))
 = 16
 </code></pre><hr>
-<h3 class="mume-header" id="span-stylecolor-8400ff-font-weight-boldinheritence-polymorphism"><span style="color: #8400ff; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></h3>
+<h3 class="mume-header" id="span-stylecolor-a30500-font-weight-boldinheritence-polymorphism"><span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></h3>
 
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="261pt" height="186pt" viewBox="0.00 0.00 260.55 186.40" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 182.4)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-182.4 256.5539,-182.4 256.5539,4 -4,4"/>
+<!-- parent -->
+<g id="node1" class="node">
+<title>parent</title>
+<polygon fill="none" stroke="#000000" points="54.277,-114.3 54.277,-177.9 198.277,-177.9 198.277,-114.3 54.277,-114.3"/>
+<text text-anchor="middle" x="125.9402" y="-164" font-family="SF Mono" font-size="11.00" fill="#000000">Parent Class</text>
+<polyline fill="none" stroke="#000000" points="54.277,-156.7 197.6033,-156.7 "/>
+<text text-anchor="middle" x="125.9402" y="-142.8" font-family="SF Mono" font-size="11.00" fill="#000000">DEFAULT VALUES</text>
+<polyline fill="none" stroke="#000000" points="54.277,-135.5 197.6033,-135.5 "/>
+<text text-anchor="start" x="62.277" y="-121.6" font-family="SF Mono" font-size="11.00" fill="#000000">DEFAULT METHODS()</text>
+</g>
+<!-- child -->
+<g id="node2" class="node">
+<title>child</title>
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-77.3 252.5539,-77.3 252.5539,-.5 0,-.5"/>
+<text text-anchor="middle" x="126.277" y="-63.4" font-family="SF Mono" font-size="11.00" fill="#000000">Child</text>
+<polyline fill="none" stroke="#000000" points="0,-56.1 252.5539,-56.1 "/>
+<text text-anchor="start" x="8" y="-42.2" font-family="SF Mono" font-size="11.00" fill="#000000">CARRIES ALL DEFAULT PARENT VALUES </text>
+<text text-anchor="start" x="8" y="-29" font-family="SF Mono" font-size="11.00" fill="#000000"> ALSO CARRIES SUBCLASS-UNIQUE VALUES </text>
+<polyline fill="none" stroke="#000000" points="0,-21.7 252.5539,-21.7 "/>
+<text text-anchor="start" x="8" y="-7.8" font-family="SF Mono" font-size="11.00" fill="#000000">+ CARRIES ALL DEFAULT PARENT METHODS </text>
+</g>
+<!-- parent&#45;&gt;child -->
+<g id="edge1" class="edge">
+<title>parent-&gt;child</title>
+<path fill="none" stroke="#000000" d="M126.277,-114.2267C126.277,-105.8861 126.277,-96.7006 126.277,-87.6973"/>
+<polygon fill="#000000" stroke="#000000" points="129.777,-87.6644 126.277,-77.6644 122.777,-87.6644 129.777,-87.6644"/>
+</g>
+</g>
+</svg>
+</p><p>Making static variables allows use of parent properties in child class along with more specific ones</p>
+<p>EXTENDS, makes child a <strong>subclass</strong>, keeping animal classes while adding its own</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Snake</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">;</span>
+</pre><p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="188pt" height="358pt" viewBox="0.00 0.00 188.00 358.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 354)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-354 184,-354 184,4 -4,4"/>
+<!-- Animal -->
+<g id="node1" class="node">
+<title>Animal</title>
+<polygon fill="none" stroke="#000000" points="0,-153.9 0,-349.5 180,-349.5 180,-153.9 0,-153.9"/>
+<text text-anchor="middle" x="89.5689" y="-335.6" font-family="SF Mono" font-size="11.00" fill="#000000">Animal</text>
+<polyline fill="none" stroke="#000000" points="0,-328.3 179.1377,-328.3 "/>
+<text text-anchor="start" x="8" y="-314.4" font-family="SF Mono" font-size="11.00" fill="#000000">- name : string</text>
+<text text-anchor="start" x="8" y="-301.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - age : int</text>
+<text text-anchor="start" x="8" y="-288" font-family="SF Mono" font-size="11.00" fill="#000000"> - length : int</text>
+<text text-anchor="start" x="8" y="-274.8" font-family="SF Mono" font-size="11.00" fill="#000000"> - weight : int</text>
+<text text-anchor="start" x="8" y="-261.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - eyeCount: int</text>
+<text text-anchor="start" x="8" y="-248.4" font-family="SF Mono" font-size="11.00" fill="#000000"> - hasLegs : boolean</text>
+<text text-anchor="start" x="8" y="-235.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - Animal[] predators</text>
+<text text-anchor="start" x="8" y="-222" font-family="SF Mono" font-size="11.00" fill="#000000"> - Animal[] prey</text>
+<text text-anchor="start" x="8" y="-208.8" font-family="SF Mono" font-size="11.00" fill="#000000"> - isPredator : boolean</text>
+<text text-anchor="start" x="8" y="-195.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - type : string</text>
+<polyline fill="none" stroke="#000000" points="0,-188.3 179.1377,-188.3 "/>
+<text text-anchor="start" x="8" y="-174.4" font-family="SF Mono" font-size="11.00" fill="#000000">+ die() : void</text>
+<text text-anchor="start" x="8" y="-161.2" font-family="SF Mono" font-size="11.00" fill="#000000"> + eat() : void</text>
+</g>
+<!-- Snake -->
+<g id="node2" class="node">
+<title>Snake</title>
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-116.9 180,-116.9 180,-.5 0,-.5"/>
+<text text-anchor="middle" x="89.7975" y="-103" font-family="SF Mono" font-size="11.00" fill="#000000">Snake</text>
+<polyline fill="none" stroke="#000000" points="0,-95.7 179.595,-95.7 "/>
+<text text-anchor="start" x="8" y="-81.8" font-family="SF Mono" font-size="11.00" fill="#000000">ALL ANIMAL PROPERTIES +</text>
+<text text-anchor="start" x="8" y="-68.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - hasPoison : boolean</text>
+<text text-anchor="start" x="8" y="-55.4" font-family="SF Mono" font-size="11.00" fill="#000000"> - speed : int</text>
+<text text-anchor="start" x="8" y="-42.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - thickness : int</text>
+<text text-anchor="start" x="8" y="-29" font-family="SF Mono" font-size="11.00" fill="#000000"> - pattern</text>
+<polyline fill="none" stroke="#000000" points="0,-21.7 179.595,-21.7 "/>
+<text text-anchor="start" x="8" y="-7.8" font-family="SF Mono" font-size="11.00" fill="#000000">+ die() : void</text>
+</g>
+<!-- Animal&#45;&gt;Snake -->
+<g id="edge1" class="edge">
+<title>Animal-&gt;Snake</title>
+<path fill="none" stroke="#000000" d="M90,-153.7865C90,-144.7326 90,-135.6953 90,-126.9934"/>
+<polygon fill="#000000" stroke="#000000" points="93.5001,-126.9514 90,-116.9515 86.5001,-126.9515 93.5001,-126.9514"/>
+</g>
+</g>
+</svg>
+</p><script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js">tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});</script>
 
       </div>
       
