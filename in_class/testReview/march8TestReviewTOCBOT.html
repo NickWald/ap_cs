@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>march8TestReview</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:testReview/march8TestReview.html
+      
+      <link rel="stylesheet" href="file:////Users/nick/.atom/packages/markdown-preview-enhanced/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+=======
+
+      <link rel="stylesheet" href="file:///C:\Users\Nick Wald\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+>>>>>>> 16bc249790968614786ad89edbda69b653adc998:testReview/march8TestReviewTOCBOT.html
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css">
+
+
+
+
+
+
+
+
+
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before,
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+.toc{overflow-y:auto}.toc>.toc-list{overflow:hidden;position:relative}.toc>.toc-list li{list-style:none}.toc-list{margin:0;padding-left:10px}a.toc-link{color:currentColor;height:100%}.is-collapsible{max-height:1000px;overflow:hidden;transition:all 300ms ease-in-out}.is-collapsed{max-height:0}.is-position-fixed{position:fixed !important;top:0}.is-active-link{font-weight:700}.toc-link::before{background-color:#EEE;content:' ';display:inline-block;height:inherit;left:0;margin-top:-1px;position:absolute;width:2px}.is-active-link::before{background-color:#54BC4B}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export" >
+      <div class="js-toc-content">
+        <div class="js-toc" style="position: sticky; top: 0; z-index: 20; float: left;"></div>
+
+      <div class="mume markdown-preview"  >
+
+      <h1 class="mume-header" id="33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></h1>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div style="color: gray; font-size:20px;">Nick Wald</div>
+<<<<<<< HEAD:testReview/march8TestReview.html
+=======
+<br>
+<!--
+>>>>>>> 16bc249790968614786ad89edbda69b653adc998:testReview/march8TestReviewTOCBOT.html
+<ul>
+<li><a href="#33-test-topic-sheet"><strong>3/3 TEST TOPIC SHEET</strong></a>
+<ul>
+<li><a href="#span-stylecolor-34b334-font-weight-boldclass-structurespan"><span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span></a>
+<ul>
+<li><a href="#span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan"><span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span></a></li>
+</ul>
+</li>
+<li><a href="#span-stylecolor-8400ff-font-weight-bold2d-arraysspan"><span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span></a>
+<ul>
+<li><a href="#span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays"><span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:</span></a>
+<ul>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span></a></li>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span></a></li>
+<li><a href="#span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#span-stylecolor-ff257f-font-weight-boldarraylistspan"><span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span></a>
+<ul>
+<li><a href="#div-stylecolor-f5c71a-font-weight-boldkey-methodsdiv"><div style="color: #f5c71a; font-weight: bold;">Key Methods:</div></a>
+<ul>
+<li><a href="#div-stylecolor-005ae9-font-weight-boldadddiv"><div style="color: #005ae9; font-weight: bold;">ADD</div></a></li>
+<li><a href="#div-stylecolor-005ae9-font-weight-boldsetdiv"><div style="color: #005ae9; font-weight: bold;">SET</div></a></li>
+<li><a href="#div-stylecolor-005ae9-font-weight-boldgetdiv"><div style="color: #005ae9; font-weight: bold;">GET</div></a></li>
+<li><a href="#div-stylecolor-005ae9-font-weight-boldremovediv"><div style="color: #005ae9; font-weight: bold;">REMOVE</div></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#span-stylecolor-ff5800-font-weight-boldsorting-searching"><span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING</span></a></li>
+<li><a href="#span-stylecolor-00308f-font-weight-boldstatic"><span style="color: #00308f; font-weight: bold;">STATIC</span></a></li>
+<li><a href="#span-stylecolor-cc0600-font-weight-boldrecursion"><span style="color: #cc0600; font-weight: bold;">RECURSION</span></a>
+<ul>
+<li><a href="#span-stylecolor-a30500-font-weight-boldinheritence-polymorphism"><span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+-->
+<hr>
+<h2 class="mume-header" id="span-stylecolor-34b334-font-weight-boldclass-structurespan"><span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span></h2>
+
+<p>dsf</p>
+<hr>
+<h3 class="mume-header" id="span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan"><span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span></h3>
+
+<p>df</p>
+<hr>
+<h2 class="mume-header" id="span-stylecolor-8400ff-font-weight-bold2d-arraysspan"><span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span></h2>
+
+<p>Array with arrays inside, written as <code>[][]</code></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token punctuation">[</span>rows<span class="token punctuation">]</span><span class="token punctuation">[</span>columns<span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span> rows<span class="token punctuation">,</span> <span class="token number">6</span> columns
+
+<span class="token comment">//standard format:</span>
+dataType <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> name <span class="token operator">=</span> <span class="token keyword">new</span> dataType<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span>
+
+<span class="token comment">//printing an 8x5 grid:</span>
+<span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> grid <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//array of size 8 with each slot containing an array of size 5</span>
+</pre><h3 class="mume-header" id="span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays"><span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:</span></h3>
+
+<h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sumArr</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> total <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    		total <span class="token operator">+=</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> total<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sumEvens</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        sum <span class="token operator">+=</span> nums<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span"><span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span></h4>
+
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//rows</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//columns</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  system<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><hr>
+<h2 class="mume-header" id="span-stylecolor-ff257f-font-weight-boldarraylistspan"><span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span></h2>
+
+<p><span style="font-size: 15px; color: ">A dynamically sized array which has methods attached to it by default</span></p>
+<br>
+<p><strong>To Create A New arrayList:</strong></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token class-name">ArrayList</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> arrList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//parentheses can often be ignored, default size is 10</span>
+</pre><br>
+<h3 class="mume-header" id="div-stylecolor-f5c71a-font-weight-boldkey-methodsdiv"><div style="color: #f5c71a; font-weight: bold;">Key Methods:</div></h3>
+
+<h4 class="mume-header" id="div-stylecolor-005ae9-font-weight-boldadddiv"><div style="color: #005ae9; font-weight: bold;">ADD</div></h4>
+
+<p><sup style="font-weight: bold;">Adds value to end of arrayList, or at specified position which shifts all subsequent indices up by 1</sup></p>
+<pre data-role="codeBlock" data-info="java" class="language-java">listName<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//adds parameter to end of arrayList</span>
+listName<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//adds value at specified index, shifts all other indexes up by 1</span>
+</pre><pre data-role="codeBlock" data-info="java" class="language-java">arrList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;hi&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//final value in arrList is now hi</span>
+</pre><pre data-role="codeBlock" data-info="java" class="language-java">arrList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;nick&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//value at position 0 becomes nick</span>
+<span class="token comment">//value @ pos 0 shifts to pos 1</span>
+<span class="token comment">//value @ pos 1 shifts to pos 2, etc...</span>
+</pre><h4 class="mume-header" id="div-stylecolor-005ae9-font-weight-boldsetdiv"><div style="color: #005ae9; font-weight: bold;">SET</div></h4>
+
+<p><sup style="font-weight: bold;">Replaces value at specified position with new specified value</sup></p>
+<pre data-role="codeBlock" data-info="java" class="language-java">listName<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+<span class="token comment">//whatever is in position index has now been changed to the new value</span>
+</pre><pre data-role="codeBlock" data-info="java" class="language-java">arrList<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;owen&quot;</span><span class="token punctuation">)</span>
+<span class="token comment">//the value at position 0 becomes owen</span>
+</pre><h4 class="mume-header" id="div-stylecolor-005ae9-font-weight-boldgetdiv"><div style="color: #005ae9; font-weight: bold;">GET</div></h4>
+
+<p><sup style="font-weight: bold;">Return value at specified position</sup></p>
+<pre data-role="codeBlock" data-info="java" class="language-java">arrList<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//returns value at position 0</span>
+</pre><h4 class="mume-header" id="div-stylecolor-005ae9-font-weight-boldremovediv"><div style="color: #005ae9; font-weight: bold;">REMOVE</div></h4>
+
+<p><sup style="font-weight: bold;">Removes value at specified index, shifts all subsequent indexes down by 1</sup></p>
+<pre data-role="codeBlock" data-info="java" class="language-java">arrList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="span-stylecolor-ff5800-font-weight-boldsorting-searching"><span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING</span></h2>
+
+<hr>
+<h2 class="mume-header" id="span-stylecolor-00308f-font-weight-boldstatic"><span style="color: #00308f; font-weight: bold;">STATIC</span></h2>
+
+<hr>
+<h2 class="mume-header" id="span-stylecolor-cc0600-font-weight-boldrecursion"><span style="color: #cc0600; font-weight: bold;">RECURSION</span></h2>
+
+<p><strong>Using a function inside itself, repeatedly shortening and checking through input</strong><br>
+ESSENTIALLY REDUCING PROBLEM SIZE UNTIL BASE CASE IS REACHED</p>
+<p><em><strong>Example 1: Reversing a string</strong></em><br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mtext>String&#xA0;s</mtext><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>&#xA0;</mtext><mi>s</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if&#xA0;s.length&#xA0;</mtext><mo>&#x2264;</mo><mn>1</mn><mtext>&#xA0;(base&#xA0;case)</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>f</mi><mo stretchy="false">(</mo><mtext>s.substring(1)</mtext><mo stretchy="false">)</mo><mo>+</mo><mtext>&#xA0;s.charAt(0)</mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>otherwise&#xA0;(recursive&#xA0;case)</mtext></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(\text{String s}) =
+  \begin{cases}
+   \ s &amp; \text{if s.length  } \leq 1 \text{ (base case)}\\
+   f(\text{s.substring(1)}) + \text{ s.charAt(0)}       &amp; \text{otherwise (recursive case)} \\
+  \end{cases}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord text"><span class="mord">String&#xA0;s</span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mspace">&#xA0;</span><span class="mord mathdefault">s</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord text"><span class="mord">s.substring(1)</span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">&#xA0;s.charAt(0)</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if&#xA0;s.length&#xA0;</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2264;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span><span class="mord text"><span class="mord">&#xA0;(base&#xA0;case)</span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">otherwise&#xA0;(recursive&#xA0;case)</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> s<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token function">f</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> s<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p><em><strong>Example 2:</strong></em></p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token comment">/*
+* @param if i have no digits, return 0
+*/</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">addDigits</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> num<span class="token operator">%</span><span class="token number">10</span> <span class="token operator">+</span> <span class="token function">addDigits</span><span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//using method on a smaller scale</span>
+  <span class="token comment">//with integer division, when you divide by 10, last number is chopped off, leaving rightmost digits to check. then run again at a smaller scale w the last digit chopped off</span>
+<span class="token punctuation">}</span>
+</pre><p>Start by writing base case, then recursive cases<br>
+Cases in which the function is called inside itself are recursive cases</p>
+<p><strong>Recursively tracing the number 7315 using addDigits function:</strong></p>
+<pre data-role="codeBlock" data-info class="language-"><code>addDigits(7315)
+= 5 + addDigits(731)
+= 5 + (1 + addDigits(73))
+= 5 + (1 + (3 + addDigits(7)))
+= 5 + (1 + (3+ (7 + addDigits(0))))
+= (5 + (1 + (3 + (7 + 0))))
+= 16
+</code></pre><hr>
+<h3 class="mume-header" id="span-stylecolor-a30500-font-weight-boldinheritence-polymorphism"><span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM</span></h3>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="261pt" height="186pt" viewBox="0.00 0.00 260.55 186.40" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 182.4)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-182.4 256.5539,-182.4 256.5539,4 -4,4"/>
+<!-- parent -->
+<g id="node1" class="node">
+<title>parent</title>
+<polygon fill="none" stroke="#000000" points="54.277,-114.3 54.277,-177.9 198.277,-177.9 198.277,-114.3 54.277,-114.3"/>
+<text text-anchor="middle" x="125.9402" y="-164" font-family="SF Mono" font-size="11.00" fill="#000000">Parent Class</text>
+<polyline fill="none" stroke="#000000" points="54.277,-156.7 197.6033,-156.7 "/>
+<text text-anchor="middle" x="125.9402" y="-142.8" font-family="SF Mono" font-size="11.00" fill="#000000">DEFAULT VALUES</text>
+<polyline fill="none" stroke="#000000" points="54.277,-135.5 197.6033,-135.5 "/>
+<text text-anchor="start" x="62.277" y="-121.6" font-family="SF Mono" font-size="11.00" fill="#000000">DEFAULT METHODS()</text>
+</g>
+<!-- child -->
+<g id="node2" class="node">
+<title>child</title>
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-77.3 252.5539,-77.3 252.5539,-.5 0,-.5"/>
+<text text-anchor="middle" x="126.277" y="-63.4" font-family="SF Mono" font-size="11.00" fill="#000000">Child</text>
+<polyline fill="none" stroke="#000000" points="0,-56.1 252.5539,-56.1 "/>
+<text text-anchor="start" x="8" y="-42.2" font-family="SF Mono" font-size="11.00" fill="#000000">CARRIES ALL DEFAULT PARENT VALUES </text>
+<text text-anchor="start" x="8" y="-29" font-family="SF Mono" font-size="11.00" fill="#000000"> ALSO CARRIES SUBCLASS-UNIQUE VALUES </text>
+<polyline fill="none" stroke="#000000" points="0,-21.7 252.5539,-21.7 "/>
+<text text-anchor="start" x="8" y="-7.8" font-family="SF Mono" font-size="11.00" fill="#000000">+ CARRIES ALL DEFAULT PARENT METHODS </text>
+</g>
+<!-- parent&#45;&gt;child -->
+<g id="edge1" class="edge">
+<title>parent-&gt;child</title>
+<path fill="none" stroke="#000000" d="M126.277,-114.2267C126.277,-105.8861 126.277,-96.7006 126.277,-87.6973"/>
+<polygon fill="#000000" stroke="#000000" points="129.777,-87.6644 126.277,-77.6644 122.777,-87.6644 129.777,-87.6644"/>
+</g>
+</g>
+</svg>
+</p><p>Making static variables allows use of parent properties in child class along with more specific ones</p>
+<p>EXTENDS, makes child a <strong>subclass</strong>, keeping animal classes while adding its own</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Snake</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">;</span>
+</pre><p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="188pt" height="358pt" viewBox="0.00 0.00 188.00 358.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 354)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-354 184,-354 184,4 -4,4"/>
+<!-- Animal -->
+<g id="node1" class="node">
+<title>Animal</title>
+<polygon fill="none" stroke="#000000" points="0,-153.9 0,-349.5 180,-349.5 180,-153.9 0,-153.9"/>
+<text text-anchor="middle" x="89.5689" y="-335.6" font-family="SF Mono" font-size="11.00" fill="#000000">Animal</text>
+<polyline fill="none" stroke="#000000" points="0,-328.3 179.1377,-328.3 "/>
+<text text-anchor="start" x="8" y="-314.4" font-family="SF Mono" font-size="11.00" fill="#000000">- name : string</text>
+<text text-anchor="start" x="8" y="-301.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - age : int</text>
+<text text-anchor="start" x="8" y="-288" font-family="SF Mono" font-size="11.00" fill="#000000"> - length : int</text>
+<text text-anchor="start" x="8" y="-274.8" font-family="SF Mono" font-size="11.00" fill="#000000"> - weight : int</text>
+<text text-anchor="start" x="8" y="-261.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - eyeCount: int</text>
+<text text-anchor="start" x="8" y="-248.4" font-family="SF Mono" font-size="11.00" fill="#000000"> - hasLegs : boolean</text>
+<text text-anchor="start" x="8" y="-235.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - Animal[] predators</text>
+<text text-anchor="start" x="8" y="-222" font-family="SF Mono" font-size="11.00" fill="#000000"> - Animal[] prey</text>
+<text text-anchor="start" x="8" y="-208.8" font-family="SF Mono" font-size="11.00" fill="#000000"> - isPredator : boolean</text>
+<text text-anchor="start" x="8" y="-195.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - type : string</text>
+<polyline fill="none" stroke="#000000" points="0,-188.3 179.1377,-188.3 "/>
+<text text-anchor="start" x="8" y="-174.4" font-family="SF Mono" font-size="11.00" fill="#000000">+ die() : void</text>
+<text text-anchor="start" x="8" y="-161.2" font-family="SF Mono" font-size="11.00" fill="#000000"> + eat() : void</text>
+</g>
+<!-- Snake -->
+<g id="node2" class="node">
+<title>Snake</title>
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-116.9 180,-116.9 180,-.5 0,-.5"/>
+<text text-anchor="middle" x="89.7975" y="-103" font-family="SF Mono" font-size="11.00" fill="#000000">Snake</text>
+<polyline fill="none" stroke="#000000" points="0,-95.7 179.595,-95.7 "/>
+<text text-anchor="start" x="8" y="-81.8" font-family="SF Mono" font-size="11.00" fill="#000000">ALL ANIMAL PROPERTIES +</text>
+<text text-anchor="start" x="8" y="-68.6" font-family="SF Mono" font-size="11.00" fill="#000000"> - hasPoison : boolean</text>
+<text text-anchor="start" x="8" y="-55.4" font-family="SF Mono" font-size="11.00" fill="#000000"> - speed : int</text>
+<text text-anchor="start" x="8" y="-42.2" font-family="SF Mono" font-size="11.00" fill="#000000"> - thickness : int</text>
+<text text-anchor="start" x="8" y="-29" font-family="SF Mono" font-size="11.00" fill="#000000"> - pattern</text>
+<polyline fill="none" stroke="#000000" points="0,-21.7 179.595,-21.7 "/>
+<text text-anchor="start" x="8" y="-7.8" font-family="SF Mono" font-size="11.00" fill="#000000">+ die() : void</text>
+</g>
+<!-- Animal&#45;&gt;Snake -->
+<g id="edge1" class="edge">
+<title>Animal-&gt;Snake</title>
+<path fill="none" stroke="#000000" d="M90,-153.7865C90,-144.7326 90,-135.6953 90,-126.9934"/>
+<polygon fill="#000000" stroke="#000000" points="93.5001,-126.9514 90,-116.9515 86.5001,-126.9515 93.5001,-126.9514"/>
+</g>
+</g>
+</svg>
+</p><script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js">tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: true,
+});</script>
+
+    </div>
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script type="text/javascript">
+tocbot.init({
+
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.js-toc-content',
+
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3, h4, h5, h6',
+
+  // Headings that match the ignoreSelector will be skipped.
+  ignoreSelector: '.js-toc-ignore',
+
+  // For headings inside relative or absolute positioned containers within content
+  hasInnerContainers: true,
+
+  // Main class to add to links.
+  linkClass: 'toc-link',
+
+  // Extra classes to add to links.
+  extraLinkClasses: '',
+
+  // Class to add to active links,
+  // the link corresponding to the top most heading on the page.
+  activeLinkClass: 'is-active-link',
+
+  // Main class to add to lists.
+  listClass: 'toc-list',
+
+  // Extra classes to add to lists.
+  extraListClasses: '',
+
+  // Class that gets added when a list should be collapsed.
+  isCollapsedClass: 'is-collapsed',
+
+  // Class that gets added when a list should be able
+  // to be collapsed but isn't necessarily collpased.
+  collapsibleClass: 'is-collapsible',
+
+  // Class to add to list items.
+  listItemClass: 'toc-list-item',
+
+  // How many heading levels should not be collpased.
+  // For example, number 6 will show everything since
+  // there are only 6 heading levels and number 0 will collpase them all.
+  // The sections that are hidden will open
+  // and close as you scroll to headings within them.
+  collapseDepth: 2,
+
+  // Smooth scrolling enabled.
+  scrollSmooth: true,
+
+  // Smooth scroll duration.
+  scrollSmoothDuration: 420,
+
+  // Callback for scroll end.
+  scrollEndCallback: function (e) { },
+
+  // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+  headingsOffset: 1,
+
+  // Timeout between events firing to make sure it's
+  // not too rapid (for performance reasons).
+  throttleTimeout: 50,
+
+  // Element to add the positionFixedClass to.
+  positionFixedSelector: null,
+
+  // Fixed position class to add to make sidebar fixed after scrolling
+  // down past the fixedSidebarOffset.
+  positionFixedClass: 'is-position-fixed',
+
+  // fixedSidebarOffset can be any number but by default is set
+  // to auto which sets the fixedSidebarOffset to the sidebar
+  // element's offsetTop from the top of the document on init.
+  fixedSidebarOffset: 1,
+
+  // includeHtml can be set to true to include the HTML markup from the
+  // heading node instead of just including the textContent.
+  includeHtml: true,
+
+  // orderedList can be set to false to generate unordered lists (ul)
+  // instead of ordered lists (ol)
+  orderedList: false,
+
+  // If there is a fixed article scroll container, set to calculate titles' offset
+  scrollContainer: 10,
+
+  // prevent ToC DOM rendering if it's already rendered by an external system
+  skipRendering: false,
+
+  // Optional callback to change heading labels.
+  // For example it can be used to cut down and put ellipses on multiline headings you deem too long.
+  // Called each time a heading is parsed. Expects a string in return, the modified label to display.
+  // function (string) => string
+  headingLabelCallback: true,
+
+  // ignore headings that are hidden in DOM
+  ignoreHiddenElements: false,
+
+  // Optional callback to modify properties of parsed headings.
+  // The heading element is passed in node parameter and information parsed by default parser is provided in obj parameter.
+  // Function has to return the same or modified obj.
+  // The heading will be excluded from TOC if nothing is returned.
+  // function (object, HTMLElement) => object | void
+  headingObjectCallback: 5,
+
+  // onclick function to apply to all links in toc. will be called with
+  // the event as the first parameter, and this can be used to stop,
+  // propagation, prevent default or perform action
+  onClick: true,
+
+});
+
+</script>
+    </body>
+
+
+
+
+
+
+
+  </html>
