@@ -1,7 +1,9 @@
 # **3/3 TEST TOPIC SHEET**
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 
+
 <div style="color: gray; font-size:20px;">Nick Wald</div>
+
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [**3/3 TEST TOPIC SHEET**](#33-test-topic-sheet)
@@ -19,21 +21,18 @@
 			- [<div style="color: #005ae9; font-weight: bold;">GET</div>](#div-stylecolor-005ae9-font-weight-boldgetdiv)
 			- [<div style="color: #005ae9; font-weight: bold;">REMOVE</div>](#div-stylecolor-005ae9-font-weight-boldremovediv)
 	- [<span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING](#span-stylecolor-ff5800-font-weight-boldsorting-searching)
+		- [**<span style="color: gold;">SORTING</span>**](#span-stylecolor-goldsortingspan)
+			- [**<span style="color: yellow;">BUBBLE SORT</span>**](#span-stylecolor-yellowbubble-sortspan)
+			- [**<span style="color: yellow;">Standard Swap:</span>**](#span-stylecolor-yellowstandard-swapspan)
+		- [**<span style="color: CORNFLOWERBLUE;">SEARCHING</span>**](#span-stylecolor-cornflowerbluesearchingspan)
+			- [**<span style="color: PINK;">STANDARD SEQUENTIAL SEARCH:</span>**](#span-stylecolor-pinkstandard-sequential-searchspan)
+			- [**<span style="color: PINK;">SPACE EFFICIENCY</span>**](#span-stylecolor-pinkspace-efficiencyspan)
+			- [**<span style="color: PINK;">SEQUENTIAL SEARCH</span>**](#span-stylecolor-pinksequential-searchspan)
 	- [<span style="color: #00308f; font-weight: bold;">STATIC](#span-stylecolor-00308f-font-weight-boldstatic)
 	- [<span style="color: #cc0600; font-weight: bold;">RECURSION](#span-stylecolor-cc0600-font-weight-boldrecursion)
 		- [<span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM](#span-stylecolor-a30500-font-weight-boldinheritence-polymorphism)
 
 <!-- /TOC -->
-
----
-
-## <span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span>
-dsf
-
----
-
-### <span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span>
-df
 
 ---
 
@@ -171,11 +170,183 @@ arrList.remove(1);
 ---
 
 ## <span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
+### **<span style="color: gold;">SORTING</span>**
+
+#### **<span style="color: yellow;">BUBBLE SORT</span>**
+*(kind of inefficient)* /
+(ONLY LOOKING AT TWO LOOPS)
+
+Basically does this:
++ POS 0 > ALL?
++ POS 1 > ALL?
++ POS 2 > ALL?
+
+To do this, we need to know how to swap 2 elements. How?
+
+| 3 | 4 | -1 | 7 |
+|---|---|----|---|
+
+How do I move 7 in slot 3 to where 3 is in slot 0?
+```java
+int s = arr[0];
+arr[0] = arr[3];
+arr[3] = s;
+```
+
+Why cant you just do this?:
+```java
+arr[0] = arr[3];
+arr[3] = arr[0]
+```
+*because you need to keep track of what you are replacing*
+
+A swap has 3 integral parts:
+
+1. store the first thing
+2. overwrite the first thing
+3. hold that first thing in a variable
+
+#### **<span style="color: yellow;">Standard Swap:</span>**
+
+```java
+int temp = arr[0];
+arr[0] = arr[3];
+arr[3] = temp;
+```
+
+
+### **<span style="color: CORNFLOWERBLUE;">SEARCHING</span>**
+
+#### **<span style="color: PINK;">STANDARD SEQUENTIAL SEARCH:</span>**
+```java
+/**
+** Sequential Search
+** @return loc, -1 if not found
+**/
+public int findElement(int[] arr, int target){
+  for(int i = 0; i < arr.length; i++){
+    if(arr[i] == target){
+      return i
+    }
+  }
+  return -1;
+}
+```
+
+| 0 | 1 | 2 | 3 |
+|---|---|---|---|
+| 1 | 3 | 5 | 2 |
+
+Target = 5
+
+#### **<span style="color: PINK;">SPACE EFFICIENCY</span>**
+How much space is taken up, for n length how much space will it take up
+**big O notation**
+
+O <efficiencyLevel>
+so, it takes O(n) steps
+  (big O of N)
+  Double loop = n<sup>2</sup> steps
+
+
+#### **<span style="color: PINK;">SEQUENTIAL SEARCH</span>**
+* Makes it easier to find something
+  * Computer does not know what is in list, just whether it is in order
+
+A system for searching through a list would look like this:
+**Target = 15**
+
+| 2 | 3 | 8 | 12 | 15 | 22 | 64 | 322 |
+|---|---|---|----|----|----|----|-----|
+<SUP>Start by cutting the list in half. so it becomes:</SUP>
+
+| 2 | 3 | 8 | 12 |
+|---|---|---|----|
+
+<sup>Then, compare: is ```target > target-1 || target < target-1```? ```if(target < target-1)``` cut other half out, and sort next half
+| 15 | 22 | 64 | 322 |
+|----|----|----|-----|
+
+Cut in half again, check if less than 22, if it is, it can only be 15, done.
+
+***BINARY SEARCH*** (much more efficient, this only took 3 steps)
+
+if we have n steps, and n = 8, the max number of half cuts is the log<sub>2</sub>(n)
+
+***O(log<sub>2</sub>(n))***
+
+so log<sub>2</sub>(10) = 4
+
+log<sub>2</sub>(17) = 5
+
+number of cuts does not scale based on actual space, but on the log, as we are cutting it in half.
+
+This can be done with anything, objects, words, letters, etc
+Only requirement of binary search is that the list is in order
 
 ---
 
 ## <span style="color: #00308f; font-weight: bold;">STATIC
+A METHOD THAT APPLIES SPECIFICALLY TO A CLASS
 
+* **INSTANCE DATA** - variables and methods
+  * belong to objects ONLY
+  * directly modify object Data
+
+```java
+String s = "hi";
+s.charAt(0);
+```
+  * objectName.method
+  * **dependent on state** (data referring to current value)
+    * state of snake in snake game = position, health, length, etc.
+		<br/>
+* Class data belongs to the class:
+
+ ```java
+ math.Pi;
+ math.random()
+ ```
+  * className.method
+
+  **Static** refers to anything that is class data or a class method
+  * If it belongs to the **class**, it is **static**
+  * If it belongs to an **instance**, it is **not static**
+
+  STATIC = **UNIVERSAL** - DOESN'T BELONG TO ONLY THE CLASS
+<br>
+  **Example:**
+  CitiBank class, objects are branches of bank
+
+```java
+public class citiBank {
+
+  private int location;
+  private int money;
+  private String branchName;
+  /*bank also needs to know total money supply,
+  * need a static variable to store information for
+  * just the class
+  */
+  private static int totalAssets = 0;
+  //static, belongs to class: can use citiBank.totalAssets();
+
+  public citiBank () {
+    //INSTANCE DATA (BECAUSE IT DIDN'T SAY STATIC):
+    location = 0;
+    money = 500;
+    branchName = "here";
+    totalAssets += money;
+  }
+}
+```
+
+IN ANOTHER FILE:
+
+```java
+citiBank big = new citiBank();
+citiBank small = new citiBank();
+```
 ---
 
 ## <span style="color: #cc0600; font-weight: bold;">RECURSION
