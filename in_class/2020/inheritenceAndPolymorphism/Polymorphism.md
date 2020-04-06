@@ -100,12 +100,6 @@ if(menagerie[0] instanceOf Vampire){
 }
 ```
 
-```java
-//SO, TO CAST:
-((Vampire) menagerie[0]).emitSound();
-```
-
-
 ###### THIS IS USING 1 ARRAY OF 1 TYPE TO HOLD MULTIPLE DATATYPES
 (woah)
 

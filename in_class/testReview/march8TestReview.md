@@ -7,33 +7,32 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [**3/3 TEST TOPIC SHEET**](#33-test-topic-sheet)
-	- [<span style="color: #34b334; font-weight: bold;">CLASS STRUCTURE</span>](#span-stylecolor-34b334-font-weight-boldclass-structurespan)
-		- [<span style="color: #2a8f2a; font-weight: bold;">CLASS EXTENSION</span>](#span-stylecolor-2a8f2a-font-weight-boldclass-extensionspan)
 	- [<span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span>](#span-stylecolor-8400ff-font-weight-bold2d-arraysspan)
-		- [<span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:](#span-stylecolor-2f4f4f-font-weight-bold-useful-loops-for-checking-2d-arrays)
-			- [<span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span)
-			- [<span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span)
-			- [<span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span>](#span-stylecolor-6a5acd-font-weight-bold-printing-a-2d-array-span)
+		- [<span style="color: #6a00cc; font-weight: bold;"> USEFUL LOOPS:](#span-stylecolor-6a00cc-font-weight-bold-useful-loops)
+			- [<span style="color: #5500a3; font-weight: bold;"> Return sum of all int values in a 2D Array </span>](#span-stylecolor-5500a3-font-weight-bold-return-sum-of-all-int-values-in-a-2d-array-span)
+			- [<span style="color: #5500a3; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>](#span-stylecolor-5500a3-font-weight-bold-return-sum-of-all-even-int-values-in-a-2d-array-span)
+			- [<span style="color: #5500a3; font-weight: bold;"> Printing a 2D Array </span>](#span-stylecolor-5500a3-font-weight-bold-printing-a-2d-array-span)
 	- [<span style="color: #ff257f; font-weight: bold;">ARRAYLIST</span>](#span-stylecolor-ff257f-font-weight-boldarraylistspan)
-		- [<div style="color: #f5c71a; font-weight: bold;">Key Methods:</div>](#div-stylecolor-f5c71a-font-weight-boldkey-methodsdiv)
-			- [<div style="color: #005ae9; font-weight: bold;">ADD</div>](#div-stylecolor-005ae9-font-weight-boldadddiv)
-			- [<div style="color: #005ae9; font-weight: bold;">SET</div>](#div-stylecolor-005ae9-font-weight-boldsetdiv)
-			- [<div style="color: #005ae9; font-weight: bold;">GET</div>](#div-stylecolor-005ae9-font-weight-boldgetdiv)
-			- [<div style="color: #005ae9; font-weight: bold;">REMOVE</div>](#div-stylecolor-005ae9-font-weight-boldremovediv)
-	- [<span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING](#span-stylecolor-ff5800-font-weight-boldsorting-searching)
-		- [**<span style="color: gold;">SORTING</span>**](#span-stylecolor-goldsortingspan)
-			- [**<span style="color: yellow;">BUBBLE SORT</span>**](#span-stylecolor-yellowbubble-sortspan)
-			- [**<span style="color: yellow;">Standard Swap:</span>**](#span-stylecolor-yellowstandard-swapspan)
-		- [**<span style="color: CORNFLOWERBLUE;">SEARCHING</span>**](#span-stylecolor-cornflowerbluesearchingspan)
-			- [**<span style="color: PINK;">STANDARD SEQUENTIAL SEARCH:</span>**](#span-stylecolor-pinkstandard-sequential-searchspan)
-			- [**<span style="color: PINK;">SPACE EFFICIENCY</span>**](#span-stylecolor-pinkspace-efficiencyspan)
-			- [**<span style="color: PINK;">SEQUENTIAL SEARCH</span>**](#span-stylecolor-pinksequential-searchspan)
-	- [<span style="color: #00308f; font-weight: bold;">STATIC](#span-stylecolor-00308f-font-weight-boldstatic)
-	- [<span style="color: #cc0600; font-weight: bold;">RECURSION](#span-stylecolor-cc0600-font-weight-boldrecursion)
-		- [<span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM](#span-stylecolor-a30500-font-weight-boldinheritence-polymorphism)
+		- [<span style="color: #ea0060; font-weight: bold;">Key Methods:</span>](#span-stylecolor-ea0060-font-weight-boldkey-methodsspan)
+			- [<span style="color: #bb004d; font-weight: bold;">ADD</span>](#span-stylecolor-bb004d-font-weight-boldaddspan)
+			- [<span style="color: #bb004d; font-weight: bold;">SET</span>](#span-stylecolor-bb004d-font-weight-boldsetspan)
+			- [<span style="color: #bb004d; font-weight: bold;">GET</span>](#span-stylecolor-bb004d-font-weight-boldgetspan)
+			- [<span style="color: #bb004d; font-weight: bold;">REMOVE</span>](#span-stylecolor-bb004d-font-weight-boldremovespan)
+	- [<span style="color: #ff6e2e; font-weight: bold;">SORTING</span> <span style="color: black; font-weight: bold;">+ </span> <span style="color: #00b1ff; font-weight: bold;">SEARCHING</span>](#span-stylecolor-ff6e2e-font-weight-boldsortingspan-span-stylecolor-black-font-weight-bold-span-span-stylecolor-00b1ff-font-weight-boldsearchingspan)
+		- [**<span style="color: #f14a00;">SORTING</span>**](#span-stylecolor-f14a00sortingspan)
+			- [**<span style="color: #c13b00;">BUBBLE SORT</span>**](#span-stylecolor-c13b00bubble-sortspan)
+			- [**<span style="color: #c13b00;">Standard Swap:</span>**](#span-stylecolor-c13b00standard-swapspan)
+		- [**<span style="color: #008ecc;">SEARCHING</span>**](#span-stylecolor-008eccsearchingspan)
+			- [**<span style="color: #0072a3;">STANDARD SEQUENTIAL SEARCH:</span>**](#span-stylecolor-0072a3standard-sequential-searchspan)
+			- [**<span style="color: #0072a3;">SPACE EFFICIENCY</span>**](#span-stylecolor-0072a3space-efficiencyspan)
+			- [**<span style="color: #0072a3;">SEQUENTIAL SEARCH</span>**](#span-stylecolor-0072a3sequential-searchspan)
+	- [<span style="color: #ffca36; font-weight: bold;">STATIC</span>](#span-stylecolor-ffca36-font-weight-boldstaticspan)
+	- [<span style="color: #cc0600; font-weight: bold;">RECURSION</span>](#span-stylecolor-cc0600-font-weight-boldrecursionspan)
+	- [<span style="color: #00aa72; font-weight: bold;">INHERITANCE</span> <span style="color: black; font-weight: bold;">+ </span><span style="color: #ff558d; font-weight: bold;">POLYMORPHISM</span>](#span-stylecolor-00aa72-font-weight-boldinheritancespan-span-stylecolor-black-font-weight-bold-spanspan-stylecolor-ff558d-font-weight-boldpolymorphismspan)
+		- [<span style="color: #00aa72; font-weight: bold;">INHERITANCE (EXTENSION)</span>](#span-stylecolor-00aa72-font-weight-boldinheritance-extensionspan)
+		- [<span style="color: #ff558d; font-weight: bold;">POLYMORPHISM</span>](#span-stylecolor-ff558d-font-weight-boldpolymorphismspan)
 
 <!-- /TOC -->
-
 ---
 
 ## <span style="color: #8400ff; font-weight: bold;">2D ARRAYS</span>
@@ -51,9 +50,9 @@ int [][] grid = new int[8][5];
 //array of size 8 with each slot containing an array of size 5
 ```
 
-### <span style="color: #2F4F4F; font-weight: bold;"> Useful loops for checking 2D Arrays:
+### <span style="color: #6a00cc; font-weight: bold;"> USEFUL LOOPS:
 
-#### <span style="color: #6A5ACD; font-weight: bold;"> Return sum of all int values in a 2D Array </span>
+#### <span style="color: #5500a3; font-weight: bold;"> Return sum of all int values in a 2D Array </span>
 ```java
 public int sumArr(int[][] nums){
 	int total = 0;
@@ -66,7 +65,7 @@ public int sumArr(int[][] nums){
 }
 ```
 
-#### <span style="color: #6A5ACD; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>
+#### <span style="color: #5500a3; font-weight: bold;"> Return sum of all even int values in a 2D Array </span>
 ```java
 public int sumEvens(int[][] nums){
   int sum = 0;
@@ -81,7 +80,7 @@ public int sumEvens(int[][] nums){
 }
 ```
 
-#### <span style="color: #6A5ACD; font-weight: bold;"> Printing a 2D Array </span>
+#### <span style="color: #5500a3; font-weight: bold;"> Printing a 2D Array </span>
 
 ```java
 int[][] arr = new int[4][3];
@@ -110,10 +109,10 @@ ArrayList <String> arrList = new ArrayList <String>(100);
 
 <br>
 
-### <div style="color: #f5c71a; font-weight: bold;">Key Methods:</div>
+### <span style="color: #ea0060; font-weight: bold;">Key Methods:</span>
 
 
-#### <div style="color: #005ae9; font-weight: bold;">ADD</div>
+#### <span style="color: #bb004d; font-weight: bold;">ADD</span>
 
 <sup style="font-weight: bold;">Adds value to end of arrayList, or at specified position which shifts all subsequent indices up by 1</sup>
 
@@ -136,7 +135,7 @@ arrList.add(0, "nick");
 //value @ pos 1 shifts to pos 2, etc...
 ```
 
-#### <div style="color: #005ae9; font-weight: bold;">SET</div>
+#### <span style="color: #bb004d; font-weight: bold;">SET</span>
 
 <sup style="font-weight: bold;">Replaces value at specified position with new specified value</sup>
 
@@ -150,7 +149,7 @@ arrList.set(0, "owen")
 //the value at position 0 becomes owen
 ```
 
-#### <div style="color: #005ae9; font-weight: bold;">GET</div>
+#### <span style="color: #bb004d; font-weight: bold;">GET</span>
 
 <sup style="font-weight: bold;">Return value at specified position</sup>
 
@@ -159,7 +158,7 @@ arrList.get(0);
 //returns value at position 0
 ```
 
-#### <div style="color: #005ae9; font-weight: bold;">REMOVE</div>
+#### <span style="color: #bb004d; font-weight: bold;">REMOVE</span>
 
 <sup style="font-weight: bold;">Removes value at specified index, shifts all subsequent indexes down by 1</sup>
 
@@ -169,10 +168,10 @@ arrList.remove(1);
 
 ---
 
-## <span style="color: #ff5800; font-weight: bold;">SORTING + SEARCHING
-### **<span style="color: gold;">SORTING</span>**
+## <span style="color: #ff6e2e; font-weight: bold;">SORTING</span> <span style="color: black; font-weight: bold;">+ </span> <span style="color: #00b1ff; font-weight: bold;">SEARCHING</span>
+### **<span style="color: #f14a00;">SORTING</span>**
 
-#### **<span style="color: yellow;">BUBBLE SORT</span>**
+#### **<span style="color: #c13b00;">BUBBLE SORT</span>**
 *(kind of inefficient)* /
 (ONLY LOOKING AT TWO LOOPS)
 
@@ -206,7 +205,7 @@ A swap has 3 integral parts:
 2. overwrite the first thing
 3. hold that first thing in a variable
 
-#### **<span style="color: yellow;">Standard Swap:</span>**
+#### **<span style="color: #c13b00;">Standard Swap:</span>**
 
 ```java
 int temp = arr[0];
@@ -215,9 +214,9 @@ arr[3] = temp;
 ```
 
 
-### **<span style="color: CORNFLOWERBLUE;">SEARCHING</span>**
+### **<span style="color: #008ecc;">SEARCHING</span>**
 
-#### **<span style="color: PINK;">STANDARD SEQUENTIAL SEARCH:</span>**
+#### **<span style="color: #0072a3;">STANDARD SEQUENTIAL SEARCH:</span>**
 ```java
 /**
 ** Sequential Search
@@ -239,7 +238,7 @@ public int findElement(int[] arr, int target){
 
 Target = 5
 
-#### **<span style="color: PINK;">SPACE EFFICIENCY</span>**
+#### **<span style="color: #0072a3;">SPACE EFFICIENCY</span>**
 How much space is taken up, for n length how much space will it take up
 **big O notation**
 
@@ -249,7 +248,7 @@ so, it takes O(n) steps
   Double loop = n<sup>2</sup> steps
 
 
-#### **<span style="color: PINK;">SEQUENTIAL SEARCH</span>**
+#### **<span style="color: #0072a3;">SEQUENTIAL SEARCH</span>**
 * Makes it easier to find something
   * Computer does not know what is in list, just whether it is in order
 
@@ -263,7 +262,7 @@ A system for searching through a list would look like this:
 | 2 | 3 | 8 | 12 |
 |---|---|---|----|
 
-<sup>Then, compare: is ```target > target-1 || target < target-1```? ```if(target < target-1)``` cut other half out, and sort next half
+<sup>Then, compare: is ```target > target-1 || target < target-1``` ? ```if(target < target-1)``` cut other half out, and sort next half
 | 15 | 22 | 64 | 322 |
 |----|----|----|-----|
 
@@ -286,7 +285,8 @@ Only requirement of binary search is that the list is in order
 
 ---
 
-## <span style="color: #00308f; font-weight: bold;">STATIC
+## <span style="color: #ffca36; font-weight: bold;">STATIC</span>
+
 A METHOD THAT APPLIES SPECIFICALLY TO A CLASS
 
 * **INSTANCE DATA** - variables and methods
@@ -343,17 +343,24 @@ public class citiBank {
 
 IN ANOTHER FILE:
 
-```java
+```js
 citiBank big = new citiBank();
 citiBank small = new citiBank();
 ```
 ---
 
-## <span style="color: #cc0600; font-weight: bold;">RECURSION
+## <span style="color: #cc0600; font-weight: bold;">RECURSION</span>
+
 **Using a function inside itself, repeatedly shortening and checking through input**
 ESSENTIALLY REDUCING PROBLEM SIZE UNTIL BASE CASE IS REACHED
 
+QUESTIONS TO ASK:
+What is the recursive case doing?
+How is the function reducing the size?
+What am I doing/returning?
+
 ***Example 1: Reversing a string***
+
 $$
 f(\text{String s}) =
   \begin{cases}
@@ -361,6 +368,7 @@ f(\text{String s}) =
    f(\text{s.substring(1)}) + \text{ s.charAt(0)}       & \text{otherwise (recursive case)} \\
   \end{cases}
 $$
+
 ```java
 public String f(String s){
   if(s.length()<= 1) return s;
@@ -396,8 +404,9 @@ addDigits(7315)
 ```
 ---
 
-### <span style="color: #a30500; font-weight: bold;">INHERITENCE + POLYMORPHISM
+## <span style="color: #00aa72; font-weight: bold;">INHERITANCE</span> <span style="color: black; font-weight: bold;">+ </span><span style="color: #ff558d; font-weight: bold;">POLYMORPHISM</span>
 
+### <span style="color: #00aa72; font-weight: bold;">INHERITANCE (EXTENSION)</span>
 
 ```viz
 digraph G {
@@ -436,11 +445,12 @@ digraph G {
 
 Making static variables allows use of parent properties in child class along with more specific ones
 
-EXTENDS, makes child a **subclass**, keeping animal classes while adding its own
 
-```java
+```javascript
 public class Snake extends Animal;
 ```
+
+EXTENDS, makes child a **subclass**, keeping animal classes while adding its own
 
 
 ```viz
@@ -490,3 +500,135 @@ digraph G {
   Animal -> Snake
 }
 ```
+---
+
+### <span style="color: #ff558d; font-weight: bold;">POLYMORPHISM</span>
+
+Full power of extension/polymorphism is seen in interfaces
+
+This is a way to use this relationship to make programs more robust and general.
+
+Polymorphism = is a ___ also a ___ ?
+
+```viz
+digraph G {
+  fontname = "SF Mono"
+  fontsize = 10
+
+  node [
+          fontname = "SF Mono"
+          fontsize = 11
+          shape = "record"
+          width = 1
+  ]
+
+  edge [
+          fontname = "SF Mono"
+          fontsize = 11
+  ]
+
+  Monster [
+          label = "{ Monster \l}"
+  ]
+  Vampire [
+          label = "{Vampire \l}"
+  ]
+  Zombie [
+          label = "{Zombie \l}"
+  ]
+  MonsterSub [
+          label = "{Monster\l}"
+  ]
+
+  Monster -> Zombie
+  Monster -> MonsterSub
+  Monster -> Vampire
+
+}
+```
+
+```processing
+monster unknown;
+void setup(){
+  size(800, 800);
+  m = new monster(0, 0);
+  v = new vampire(1000, 100000, false);
+  unknown = new vampire(10, 0, true);
+}
+```
+
+Which of these are legal?:
+
+**General --> Specific**
+
+```java
+Monster m = new Werewolf(); //LEGAL
+```
+
+```java
+Werewolf w = new Werewolf(); //LEGAL
+```
+
+```java
+Werewolf w1 = new Monster(); //ILLEGAL
+```
+
+```java
+Vampire v = new werewolf(); //ILLEGAL
+```
+
+**ALSO WORKS W/ ARRAYS, to speed this up, use an array**
+Fill with a random set of monsters:
+
+```java
+int prettyBig = 5;
+Monster [] menagerie = new Monster[prettyBig];
+for (int i = 0; i < prettyBig; i++) {
+  int rand = (int)(math.random()*4);
+  if(rand == 0){
+    menagerie[i] = new Vampire();
+  }
+  else if(rand == 1){
+    menagerie[i] = new Monster();
+  }
+  else if (rand == 2) {
+    menagerie[i] == new Zombie();
+  }
+  else menagerie[i] == new Werewolf();
+}
+
+//to show everything:
+for(Monster m: menagerie) {
+  m.show();
+  m.emitSound(); //if the sub doesn't have an emitSound, it defaults to the parent class's method
+}
+
+//SO, TO CAST:
+if(menagerie[0] instanceOf Vampire){
+//instanceOf = is the class type equal?
+//(== for class type)
+  ((Vampire) menagerie[0]).emitSound();
+}
+```
+
+**THIS IS USING 1 ARRAY OF 1 TYPE TO HOLD MULTIPLE DATATYPES**
+(woah)
+
+
+Array can hold a UI element as a parent class, with a subclass being button, or cursor, or etc.
+
+---
+CONVERTING TO BINARY:
+num/2
+remainder = 1 or 0, on or off in slot
+
+so if num = 100:
+**Num/2 : R**
+100/2 : 0
+50/2 : 0
+25/2 : 1
+12/2 : 1
+6/2 : 0
+3/2 : 0
+1/2 : 1
+0 : 1
