@@ -1,0 +1,12 @@
+/** Precondition: n is between 1 and 12, inclusive.
+
+* Returns the factorial of n, as described in part (a).
+
+*/
+public static int factorial(int n){
+  int fact = 1;
+  for(int i = 1; i <= n; i++){
+    fact = fact*i;
+  }
+  return fact;
+}
