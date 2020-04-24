@@ -44,7 +44,7 @@ public class circle{
   public void move(){
     x++;
     y++;
-    if( x > width) x = 0;
+    if(x > width) x = 0;
     if(y > height) y = 0;
   }
 }

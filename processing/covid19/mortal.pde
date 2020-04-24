@@ -1,25 +1,82 @@
 public class mortal{
-  protected float vx, vy;
-  protected float x, y;
-  protected boolean dead;
-  
-  public mortal(){
-    this.x = random(0, width);
-    this.y = random(0, height - 300);
-    this.vx = random(-5, 5);
-    this.vy = random(-5, 5);
-    this.dead = false;
+    protected float vx, vy;
+    protected float x, y;
+    protected boolean dead;
+    protected float xSpeed, ySpeed; 
+    protected float circleSize;
+    protected float radius;
+    protected color c, colorInfected;
+    protected boolean infected;
+  public mortal(float xpos, float ypos, float cSize, boolean inf){
+     x = xpos;
+    y = ypos;
+    circleSize = cSize;
+    radius = cSize*1.5;
+    infected = inf;
+    inf = false;
     
-    public void setVelocity(){
-      this.vx = vx;
-      this.vy = vy;
+    if(inf == true){
+      fill(colorInfected);
     }
-    public void resetVelocity(){
-      this.vx = random(-10, 4);
-      this.vy = random(-10, 4);
+    
+    colorInfected = color(255, 0, 0);
+    c = color(0, 0, 255);
+    
+    //set initial speed to random
+    xSpeed = random(-.5, .5);
+    ySpeed = random(-.5, .5);
+  } 
+    
+   //allows movement
+    void update() {
+      x += xSpeed; 
+      y += ySpeed;  
     }
-    public void move(){
+    
+    void checkCollisions() { 
+      float r = circleSize/2;
+      if ( (x<r) || (x>width-r)){ 
+        xSpeed = -xSpeed; 
+      }
+      if( (y<r) || (y>height-r)) { 
+        ySpeed = -ySpeed;  
+      }
+
+    }
+    
+    void collisionColor(mortal other){
+      float d = dist(this.x, this.y, other.x, other.y);
+      this.infected = true;
+      for(int i = 0; i < community.length; i++){
+        if(d > circleSize*2 && other.infected == false){
+         this.infected = false;
+        }
+        else if(d < circleSize*2 && other.infected == true){
+          //infect();
+          this.infected = true;
+        }
+       }  
+      }
       
+     // boolean checkInfected(mortal i){
+       // if(i.infected == true){ 
+         // return true;
+       // }
+       // else if(i.infected == false){
+       //   return false;
+      //  }
+    //  }
+    
+    
+
+  void drawCircle() {  
+    if(this.infected == true){
+      fill(colorInfected);
     }
-  }
+    else if(this.infected == false){
+      fill(c);
+    }
+    else fill(255,255,255);
+    ellipse(x, y, circleSize, circleSize); 
+  } 
 }
