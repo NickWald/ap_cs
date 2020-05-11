@@ -40,8 +40,9 @@ public class TestResults{
     int highestScore = 0;
     for(int i = 0; i < key.size(); i++){
       if(key.get(i).getScore > highestScore){
-        key.set(i, key.get(i).getScore());
+      highestScore = key.get(i).getScore;
       }
+      else highsScore
     }
   }
 }
