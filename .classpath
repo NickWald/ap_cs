@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/Users/nick/github/ap_cs/classes"/>
+	<classpathentry kind="src" path="in_class/2020/reviewClasses/complexNum"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -21,46 +21,88 @@
   }
 </style>
 </head>
-<body><div id="readme" class="container"><article class="markdown-body entry-content"><p>#AP CS A EXAM REVIEW SHEET (NICK WALD)</p>
-<pre><code class="language-viz">digraph G {
-  fontname = &quot;SF Mono&quot;
-  fontsize = 10
-
-  node [
-          fontname = &quot;SF Mono&quot;
-          fontsize = 11
-          shape = &quot;record&quot;
-          width = 1
-  ]
-
-  edge [
-          fontname = &quot;SF Mono&quot;
-          fontsize = 5
-  ]
-
-  Monster [
-          label = &quot;{ Read question \l}&quot;
-  ]
-  Vampire [
-          label = &quot;{Vampire \l}&quot;
-  ]
-  Zombie [
-          label = &quot;{Zombie \l}&quot;
-  ]
-  MonsterSub [
-          label = &quot;{Monster\l}&quot;
-  ]
-
-  Monster -&gt; Zombie
-  Monster -&gt; MonsterSub
-  Monster -&gt; Vampire
-
+<body><div id="readme" class="container"><article class="markdown-body entry-content"><p>#AP CS A EXAM REVIEW SHEET (NICK WALD)
+WRITE DOWN WHAT THE QUESTION IS ASKING!</p>
+<p>##CHECKLIST</p>
+<ul>
+<li><input disabled type="checkbox"> Do I know what the question is asking?</li>
+<li><input disabled type="checkbox"> What is the return type?</li>
+<li><input disabled type="checkbox"> Do I need to make a variable?</li>
+<li><input disabled type="checkbox"> Do I need a loop?</li>
+<li><input disabled type="checkbox"> What needs to be in the If statement?</li>
+<li><input disabled type="checkbox"> What is returned?</li>
+</ul>
+<p>###FOR OPEN-ENDED QUESTIONS:</p>
+<ul>
+<li><input disabled type="checkbox"> MAKE VARIABLE?<ul>
+<li><input disabled type="checkbox"> IF SO, PRIVATE? PUBLIC?</li>
+</ul>
+</li>
+<li><input disabled type="checkbox"> MAKE SETTER OR GETTER?</li>
+<li><input disabled type="checkbox"> WHAT HAPPENS TO CONSTRUCTOR?</li>
+</ul>
+<p>##FOR ARRAYLIST QUESTIONS</p>
+<ul>
+<li><input disabled type="checkbox"> Make a variable</li>
+<li><input disabled type="checkbox"> Set that variable somehow (either starting value using = is static), using a new constructor with a new argument or making a setter</li>
+<li><input disabled type="checkbox"> Make sure to write a getter</li>
+<li><input disabled type="checkbox"> Maybe reference how/where that variable will change or how it applies to the problem</li>
+</ul>
+<p>##Iterative Statements</p>
+<pre><code class="language-java">// for loop
+for (condition){
+  expression;
+}
+// for each loop
+for (int i: someArray){
+  expression;
+}
+// while loop
+while (condition){
+  expression;
 }</code></pre>
-<p>##Basics:</p>
-<p>###instantiation</p>
-<p>###booleans</p>
-<p>###forEach loop / enhanced for loop</p>
-<p>###Operator Precedence</p>
+<p>##Variables</p>
+<pre><code class="language-java">{public|private} [static] type name [= expression|value];</code></pre>
+<p>##Methods</p>
+<pre><code class="language-java">{public|private} [static] {type | void} name(arg1, ..., argN ){
+  statements
+}</code></pre>
+<p>##Decisive Methods</p>
+<pre><code class="language-java">//if statement
+if(condition){
+  expression
+}
+//if-else statement
+if(condition){
+  expression
+}
+else{
+  expression
+}</code></pre>
+<p>##String Methods</p>
+<pre><code class="language-java">// Creating String using literal
+String str1 = &#x201C;Welcome&#x201D;;
+// Creating String using new keyword
+String str2 = new String(&#x201D;Edureka&#x201D;);
+
+str1 == str2 //compare the address;
+String newStr = str1.equals(str2); //compares the values
+String newStr = str1.equalsIgnoreCase();
+newStr = str1.length(); //calculates length
+newStr = str1.charAt(i); //extract i&apos;th character
+newStr = str1.toUpperCase(); //returns string in ALL CAPS
+newStr = str1.toLowerCase(); //returns string in ALL LOWERCASE
+newStr = str1.replace(oldVal, newVal); //search and replace
+newStr = str1.trim(); //trims surrounding whitespace
+newStr = str1.contains(&quot;value&quot;); //Check for the values
+newStr = str1.toCharArray(); //Convert into character array
+newStr = str1.IsEmpty(); //Check for empty String
+newStr = str1.endsWith(); //Checks if string ends with the given suffix</code></pre>
+<p>###Escape Sequences</p>
+<pre><code class="language-java">\t
+tab
+\n newline
+\\ backslash</code></pre>
 <p>##Arrays
 use .length
 <strong>Declaration:</strong></p>
@@ -70,15 +112,22 @@ double[] apList;</code></pre>
 <pre><code class="language-java">//dataType[] listName = new dataType[arraySize]
 double[] apList = new double[10];</code></pre>
 <p>####Common methods:</p>
-<pre><code class="language-java">//loop thru array and print each item
+<pre><code class="language-java">//loop thru array and print each item:
 public static void printArray(int[] array) {
    for (int i = 0; i &lt; array.length; i++) {
       System.out.print(array[i] + &quot; &quot;);
    }
 }</code></pre>
-<p>###ArrayList</p>
-<p>####Methods:</p>
-<p>#####ADD</p>
+<pre><code class="language-java">//reversing an array:
+for(int i = 0; i &lt; (arr.length())/2; i++){
+  double temp = a[i];
+  a[i] = a[n-1-i];
+  a[n-1-i] = temp;
+}</code></pre>
+<p>##ArrayList
+use .size();</p>
+<p>###Methods:</p>
+<p>####ADD</p>
 <pre><code class="language-java">listName.add(value);
 //adds parameter to end of arrayList
 listName.add(index, value);
@@ -89,45 +138,47 @@ listName.add(index, value);
 //value at position 0 becomes nick
 //value @ pos 0 shifts to pos 1
 //value @ pos 1 shifts to pos 2, etc...</code></pre>
-<p>#####SET</p>
+<p>####SET</p>
 <pre><code class="language-java">listName.set(index, value)
-//whatever is in position index has now been changed to the new value</code></pre>
+//whatever is in position index has now been changed to the new value,</code></pre>
 <pre><code class="language-java">arrList.set(0, &quot;owen&quot;)
 //the value at position 0 becomes owen</code></pre>
 <p><sup style="font-weight: bold;">Replaces value at specified position with new specified value</sup></p>
-<p>#####GET</p>
+<p>####GET</p>
 <pre><code class="language-java">arrList.get(0);
 //returns value at position 0</code></pre>
 <p><sup style="font-weight: bold;">Return value at specified position</sup></p>
-<p>#####REMOVE</p>
+<p>####REMOVE</p>
 <pre><code class="language-java">arrList.remove(1);</code></pre>
-<p><sup style="font-weight: bold;">Removes value at specified index, shifts all subsequent indexes down by 1</sup></p>
-<p>####FRQ 1 - Arrays / ArrayLists</p>
-<p>####FRQ 2 - Methods and Control Structures</p>
+<p><sup style="font-weight: bold;">Removes value at specified index, shifts all subsequent indexes down by 1</sup>
+REQUIRES AN <code>i--</code> AFTER IN A LOOP</p>
+<hr>
 <p>##QUICK REFERENCE
 <strong>class java.lang.Object</strong></p>
 <ul>
-<li>boolean equals(Object other)</li>
-<li>String toString()</li>
+<li>boolean .equals(Object other)</li>
+<li>String .toString()</li>
 </ul>
 <p><strong>class java.lang.Integer</strong></p>
 <ul>
 <li>Integer(int value)</li>
 <li>int intValue()</li>
-<li>Integer.MIN_VALUE <code>minimum value represented by an int or Integer</code></li>
-<li>Integer.MAX_VALUE <code>maximum value represented by an int or Integer</code></li>
+<li>Integer.MIN_VALUE
+<code>minimum value represented by an int or Integer</code></li>
+<li>Integer.MAX_VALUE
+<code>maximum value represented by an int or Integer</code></li>
 </ul>
 <p><strong>class java.lang.String</strong></p>
 <ul>
-<li>int length()</li>
-<li>String substring(int from, int to)
+<li>int .length()</li>
+<li>String .substring(int from, int to)
 <code>returns the substring beginning at from and ending at to-1</code></li>
 <li>String substring(int from)
 <code>returns substring(from, length())</code></li>
-<li>int indexOf(String str)
+<li>int .indexOf(String str)
 <code>returns the index of the first occurrence of str;</code>
 <code>returns -1 if not found</code></li>
-<li>int compareTo(String other)
+<li>int .compareTo(String other)
 <code>returns a value &lt; 0 if this is less than other</code>
 <code>returns a value = 0 if this is equal to other</code>
 <code>returns a value &gt; 0 if this is greater than other</code></li>
@@ -149,16 +200,16 @@ listName.add(index, value);
 </ul>
 <p><strong>interface java.util.List<e></e></strong></p>
 <ul>
-<li>int size()</li>
-<li>boolean add(E obj)
-appends obj to end of list; returns true</li>
-<li>void add(int index, E obj)
+<li>int .size()</li>
+<li>boolean .add(E obj)
+<code>appends obj to end of list; returns true</code></li>
+<li>void .add(int index, E obj)
 <code>inserts obj at position index &lt;= 0 &lt;= size; moving elements at position index and higher to the right (adds 1 to their indices) and adjusts size</code></li>
-<li>E get(int index)</li>
-<li>E set(int index, E obj)
+<li>E .get(int index)</li>
+<li>E .set(int index, E obj)
 <code>replaces the element at position index with obj</code>
 <code>returns the element formerly at the specified position</code></li>
-<li>E remove(int index)
+<li>E .remove(int index)
 <code>removes element from position index, moving elements at position index + 1 and higher to the left (subtracts 1 from their indices) and adjusts size</code>
 <code>returns the element formerly at the specified position</code></li>
 </ul>

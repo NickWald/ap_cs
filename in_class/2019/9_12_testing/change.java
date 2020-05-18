@@ -2,8 +2,7 @@
 
 import java.util.Scanner;
 
-public class Main {
-	public static void main(String[] args) {
+public static void main(String[] args) {
     double subtotal;
     double cashGiven;
 
@@ -15,5 +14,4 @@ public class Main {
     cashGiven = s.nextDouble();
 
     System.out.println("Your change shoud be ($): " + (cashGiven - subtotal));
-	}
 }

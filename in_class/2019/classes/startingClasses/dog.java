@@ -16,7 +16,7 @@ public class dog {
   private boolean isHungry;
 
   // zero argument constructor:
-  public Dog(){
+  public dog(){
     //set defualt values for variables declared above:
     isHappy = true;
     isHungry = true;
@@ -32,7 +32,7 @@ public class dog {
   * constructor w/ args
   * useful constructor:
   */
-  public Dog(String n, double m){ //gets name, and stores in string n
+  public dog(String n, double m){ //gets name, and stores in string n
     //any arg is temporary, n is the user's input
     //n is temporary, name is forever
     name = n;
@@ -63,12 +63,5 @@ public class dog {
   public void run(int speed) {
   }
 
-  public void feed() {
-  }}
-
-  for(
-
-  Integer i = 0;i<iterable.length;i++)
-  {
 
 }

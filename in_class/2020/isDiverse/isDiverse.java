@@ -9,5 +9,5 @@ public static boolean isDiverse(int[][] arr2D){
       if(sums[i] == sums[j]) return false;
     }
   }
-  reuturn true;
+  return true;
 }

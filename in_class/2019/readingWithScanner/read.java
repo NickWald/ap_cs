@@ -26,7 +26,6 @@ public class read {
     int counter = 0;
     int index = 0;
 
-<<<<<<< HEAD
     /* WHILE LOOP VERSION (will do the same thing):
     while (inde
     x<sample.length()){
@@ -35,12 +34,6 @@ public class read {
     }
     return counter;
     */
-=======
-    /*
-     * WHILE LOOP VERSION (will do the same thing): while (index<sample.length()){
-     * if (sample.charAt(index) == 'G') counter++; index++; } return counter;
-     */
->>>>>>> 1f9a6e66f7c0758003dbd5bf763448a8b24da88a
 
     // FOR LOOP VERSION
     for (int i = 0; i < sample.length(); i++) {

@@ -1,6 +1,6 @@
 public class DogPlayground{
   public static void main(String[] args){
-    Dog boomer = new Dog(); //new is a keyword that should always be next to the constructor
+    dog boomer = new dog(); //new is a keyword that should always be next to the constructor
 //this instantiates a dog objects, makes it real
 //makes an instance of the dog class
 //once in a variable, it holds a reference/location of the constructor

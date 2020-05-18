@@ -22,7 +22,5 @@ public class arrayList {
       System.out.println(i);
     }
 
-    fo 
-
   }
 }

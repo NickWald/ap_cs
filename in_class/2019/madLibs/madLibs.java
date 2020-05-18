@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Nick Wald 9/17/19 Purpose: Making a primitive MadLibs
  */
-public class MadLibs {
+public class madLibs {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String userName;
@@ -33,7 +33,7 @@ public class MadLibs {
 		String prisonSentence = input.nextLine();
 
 		// changes to strings:
-		lastName = lastName.subString(1, 3);
+		lastName = lastName.substring(1, 3);
 		userName = name.concat(lastName);
 		userName = userName.toLowerCase();
 		friendName = friendName.replaceAll("a", "e"); // changes any A's to E's
