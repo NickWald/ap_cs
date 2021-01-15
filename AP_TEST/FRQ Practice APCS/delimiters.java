@@ -26,7 +26,7 @@
     return returnList;
   }
 
-/* part b:
+/**  part b:
 * 1. make counters for openDel and closeDel;
 * 2. loop thru delimeters arraylist
 * 3. if openDel, increase openCount, smae with closedCount
@@ -34,7 +34,6 @@
 * 5. end loop
 * 6. return true
 */
-
 public boolean isBalanced(ArrayList<String> delimiters){
   //1:
   int openCount = 0;

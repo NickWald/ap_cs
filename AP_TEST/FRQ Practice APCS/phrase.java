@@ -12,7 +12,7 @@ public void replaceNthOccurence(String str, int n, String repl){
 
 
 //part b:
-/* 1. check current phrase, does first occurence exist?
+/**  1. check current phrase, does first occurence exist?
 * 2. while loop (do i not get -1?)
 * 3. return index
 */
