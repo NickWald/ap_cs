@@ -16,8 +16,8 @@ public class GameTest {
 		System.out.println("Look at your card, don't show me: " + trickCard.toString());
 		System.out.println("Put your card back in the deck; I will shuffle!");
 		try {
-			Thread.sleep(5000); //basically pauses the whole thing for (ms)
-		} catch (Exception e) { //gives back an exception; throws an exception. if not caught, it breaks
+			Thread.sleep(5000); // basically pauses the whole thing for (ms)
+		} catch (Exception e) { // gives back an exception; throws an exception. if not caught, it breaks
 		}
 		d.disCard(trickCard);
 		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -25,8 +25,7 @@ public class GameTest {
 		d.shuffleDeck();
 		try {
 			Thread.sleep(10000);
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 		}
 		System.out.println("Is this your card? " + trickCard.toString());
 		if (s.nextLine().equalsIgnoreCase("no")) {
